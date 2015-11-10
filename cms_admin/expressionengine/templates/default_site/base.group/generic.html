@@ -1,0 +1,115 @@
+{exp:channel:entries channel="pages"}
+{embed="includes/document-head" title="{title}"}
+
+</head>
+
+<body>
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+	
+{embed="includes/document-nav" section=""}
+	
+	<!-- Start Nav Backed Header -->
+	<div class="nav-backed-header parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="index.html">Home</a></li>
+						<li class="active">News</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Nav Backed Header --> 
+	<!-- Start Page Header -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>{title}</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	
+	<!-- Start Content -->
+	<div class="main" role="main">
+		<div id="content" class="content full">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-8">
+						<header class="single-post-header clearfix">
+							<h2 class="post-title">{page_subtitle}</h2>
+						</header>
+						
+						<article class="post-content"> 
+							<div class="featured-image"> <img src="{page_header_image}" alt=""> </div>
+							{page_body}
+
+						</article>
+						
+					</div>
+					
+{/exp:channel:entries}					
+					
+					<div class="col-xs-12 col-md-4"  style="padding-top:30px">
+						
+						<div class="listing sermons-listing">
+							<section>
+								<ul>
+									<li class="item sermon featured-sermon"> 
+										<h4>2014 Sinai Rally Video</h4>
+										<div class="featured-sermon-video">
+											<iframe width="1280" height="720" src="//www.youtube.com/embed/wUpY2bqT294" frameborder="0" allowfullscreen></iframe>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis consectetur adipiscing elit. Nulla convallis egestas rhoncus</p>
+										<hr />
+										<div class="hidden-xs">
+											<h4>Sponsors</h4>
+											<div class="slideshow" 
+												data-cycle-fx='fade'
+												data-cycle-timeout='3000'
+												data-cycle-carousel-visible='6'
+												data-cycle-carousel-fluid='true'
+												data-cycle-slides="div"
+											    >
+												{exp:low_variables:pair var="sr_partner_sponsors"}
+												<div class="col-sm-12"><a class="sponsors" href="{link}" target="_blank"><img src="{image}" /></a></div>
+												{/exp:low_variables:pair}
+											</div>
+										</div>
+									</li>
+								</ul>
+							</section>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	{embed="includes/document-footer" sponsors="on"}
+	
+</div>
+
+{embed="includes/document-modals"}
+
+
+{embed="includes/document-footer-jquery"}
+
+<script>
+$(document).ready(function() {
+	$( '.slideshow' ).cycle();
+});	
+</script>
+</body>
+</html>

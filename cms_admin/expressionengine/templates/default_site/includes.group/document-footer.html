@@ -1,0 +1,66 @@
+<!-- Start Footer -->
+{if embed:sponsors == 'on'}
+<footer class="site-footer">
+
+	<div class="container">
+		<div class="row">
+
+			{if embed:top_sponsors == 'on'}
+			<div class="col-md-12 col-sm-12" >
+				<h4>{phrase:sidebar_sponsors_title}</h4>
+				{exp:low_variables:pair var="sr_partner_sponsors"}
+				<div class="col-sm-2 col-xs-6">
+					<a class="sponsors" href="{link}" target="_blank"><img src="{image}" class="img-responsive" /></a>
+				</div>
+				{/exp:low_variables:pair}
+				
+			</div>
+			<div style="clear:both; padding-bottom:20px; margin-bottom:20px; border-bottom:2px #ECEAE4 dotted"></div>
+			{/if}
+
+
+			<div class="col-md-12 col-sm-12">
+				<h4>{phrase:our_checkpoint_sponsors}</h4>
+				{exp:low_variables:pair var="sr_checkpoint_sponsors"}
+				<div class="col-sm-2 col-xs-6">
+					<a class="sponsors" href="{link}" target="_blank"><img src="{image}" class="img-responsive" /></a>
+				</div>
+				{/exp:low_variables:pair}
+				
+			</div>
+			<div style="clear:both; padding-bottom:20px; margin-bottom:20px; border-bottom:2px #ECEAE4 dotted"></div>
+			
+			<div class="col-md-12 col-sm-12">
+				<h4>{phrase:our_paddock_sponsors}</h4>
+				{exp:low_variables:pair var="sr_paddock_sponsors"}
+				<div class="col-sm-2 col-xs-6">
+					<a class="sponsors" href="{link}" target="_blank"><img src="{image}" class="img-responsive" /></a>
+				</div>
+				{/exp:low_variables:pair}
+				
+			</div>
+			
+		</div>
+
+	</div>
+</footer>
+{/if}
+<footer class="site-footer-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="copyrights-col-left col-md-6 col-sm-6">
+				<p>{phrase:copyright} | <a href="{path='privacy-policy'}">{phrase:nav_privacy_policy}</a> | {exp:publisher:languages show_current="no"}<a rel="alternate" hreflang="{short_name}" href="{translated_url}">{if short_name == 'fr'}Français{if:else}{long_name}{/if}</a>{/exp:publisher:languages} </p><p>{phrase:site_by} : <a href="http://signatureweb.ca" target="_blank">SignatureWEB</a></p>
+			</div>
+			<div class="copyrights-col-left col-md-3 col-sm-3">
+				<div class="social-icons" style="padding-top:6px"> <a href="http://www.facebook.com/SinaiRally" target="_blank"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/sinairally" target="_blank"><i class="fa fa-twitter"></i></a> <a href="http://www.youtube.com/channel/UC3JCRvwJoKEWQK_IIo6iYvg" target="_blank"><i class="fa fa-youtube"></i></a> </div>
+			</div>
+			<div class="copyrights-col-right col-md-3 col-sm-3">
+				<a href="http://mountsinaifoundation.org/" target="_blank"><img src="/assets/images/mshf-logo2.png" alt="Mshf Logo"></a>
+			</div>
+		
+		</div>
+	</div>
+</footer>
+<!-- End Footer -->
+
+<a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>

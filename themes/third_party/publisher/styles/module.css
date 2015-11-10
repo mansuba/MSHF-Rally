@@ -1,0 +1,143 @@
+
+.phrase-name {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+textarea.small {
+	height: 2em;
+	width: 99%;
+}
+
+table.publisher {
+	width: 100%;
+	margin: 0;
+}
+
+.templateTable td.ajax-row {
+	padding: 0 !important;
+}
+
+.ajax-form {
+	width: 100%;
+}
+
+.templateTable td.ajax-row-td {
+	padding: 0;
+}
+
+.templateTable tr.ajax-row.even td,
+.templateTable tr.ajax-row.odd td {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.templateTable tr.ajax-row.even tr:last-child td,
+.templateTable tr.ajax-row.odd tr:last-child td {
+	border: 0;
+}
+
+.indicator {
+	padding: 10px;
+	text-align: center;
+}
+
+
+.publisher-field {
+	float: left;
+	width: 75%;
+}
+
+.publisher-field.file_field {
+	float: right;
+	width: 20%;
+}
+
+.filename {
+	word-break: break-all;
+}
+
+.file_set .sub_filename {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.no_file .sub_filename {
+	margin-top: 6px;
+}
+
+.publisher-template-field span {
+	display: inline-block;
+	width: 12%;
+	text-align: right;
+}
+
+.publisher-template-field input {
+	display: inline-block;
+	/*width: 70%;*/
+	width: 35%;
+}
+
+.publisher-search-select {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.select2-drop-active,
+.select2-drop.select2-drop-above.select2-drop-active,
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices,
+.select2-dropdown-open.select2-drop-above .select2-choice,
+.select2-dropdown-open.select2-drop-above .select2-choices,
+.select2-results .select2-highlighted,
+.select2-container-multi.select2-container-active .select2-choices {
+    border-color: #999;
+}
+
+.select2-results .select2-highlighted {
+    background: #a9bac3;
+}
+
+
+
+/* warning + instructions messages, borrowed from Structure */
+
+div.ootb-message {
+	background-color: #fff9d0;
+	border: 1px solid #b6c0c2;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	margin-bottom: 25px;
+	padding: 15px;
+}
+
+#mainContent .pageContents div.ootb-message p {
+	color: #777;
+	margin-bottom: 0;
+}
+
+#mainContent .pageContents div.ootb-message p span.ootb-message-go {
+	float: right;
+}
+
+/* message GO! */
+
+div.ootb-message-go {
+	background-color: #c9ffb9;
+	border: 1px solid #b6c0c2;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin-bottom: 25px;
+	padding: 15px;
+}
+
+#mainContent .pageContents div.ootb-message-go p {
+	color: #666;
+	margin-bottom: 0;
+}
+
+input[type="text"].preview_template_custom {
+	display: none;
+	width: 120px;
+	margin-left: 20px;
+}

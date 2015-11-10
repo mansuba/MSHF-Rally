@@ -1,0 +1,2688 @@
+StartFontMetrics 4.1
+Notice Converted by PHP-font-lib
+Comment https://github.com/PhenX/php-font-lib
+EncodingScheme FontSpecific
+FontName Volkhov
+FontSubfamily Italic
+UniqueID Cyreal(www.cyreal.org): Volkhov Italic: 2011
+FullName Volkhov Italic
+Version Version 1.010
+PostScriptName Volkhov-Italic
+Trademark Volkhov is a trademark of Cyreal (www.cyreal.org).
+Manufacturer Cyreal (www.cyreal.org)
+Designer Cyreal (www.cyreal.org)
+FontVendorURL http://cyreal.org
+FontDesignerURL http://cyreal.org
+LicenseURL http://scripts.sil.org/OFL
+CompatibleFullName 噯汫桯瘠䥴慬楣
+Weight Medium
+ItalicAngle -12
+IsFixedPitch false
+UnderlineThickness 50
+UnderlinePosition -75
+FontHeightOffset 0
+Ascender 971
+Descender -319
+FontBBox -307 -308 1082 960
+StartCharMetrics 225
+U 32 ; WX 241 ; N space ; G 3
+U 33 ; WX 279 ; N exclam ; G 4
+U 34 ; WX 365 ; N quotedbl ; G 5
+U 35 ; WX 550 ; N numbersign ; G 6
+U 36 ; WX 563 ; N dollar ; G 7
+U 37 ; WX 725 ; N percent ; G 8
+U 38 ; WX 759 ; N ampersand ; G 9
+U 39 ; WX 193 ; N quotesingle ; G 10
+U 40 ; WX 319 ; N parenleft ; G 11
+U 41 ; WX 317 ; N parenright ; G 12
+U 42 ; WX 480 ; N asterisk ; G 13
+U 43 ; WX 556 ; N plus ; G 14
+U 44 ; WX 230 ; N comma ; G 15
+U 45 ; WX 368 ; N hyphen ; G 16
+U 46 ; WX 231 ; N period ; G 17
+U 47 ; WX 433 ; N slash ; G 18
+U 48 ; WX 611 ; N zero ; G 19
+U 49 ; WX 347 ; N one ; G 20
+U 50 ; WX 528 ; N two ; G 21
+U 51 ; WX 543 ; N three ; G 22
+U 52 ; WX 550 ; N four ; G 23
+U 53 ; WX 509 ; N five ; G 24
+U 54 ; WX 539 ; N six ; G 25
+U 55 ; WX 461 ; N seven ; G 26
+U 56 ; WX 578 ; N eight ; G 27
+U 57 ; WX 539 ; N nine ; G 28
+U 58 ; WX 231 ; N colon ; G 29
+U 59 ; WX 275 ; N semicolon ; G 30
+U 60 ; WX 580 ; N less ; G 31
+U 61 ; WX 597 ; N equal ; G 32
+U 62 ; WX 578 ; N greater ; G 33
+U 63 ; WX 467 ; N question ; G 34
+U 64 ; WX 875 ; N at ; G 35
+U 65 ; WX 643 ; N A ; G 36
+U 66 ; WX 631 ; N B ; G 37
+U 67 ; WX 615 ; N C ; G 38
+U 68 ; WX 697 ; N D ; G 39
+U 69 ; WX 593 ; N E ; G 40
+U 70 ; WX 551 ; N F ; G 41
+U 71 ; WX 668 ; N G ; G 42
+U 72 ; WX 770 ; N H ; G 43
+U 73 ; WX 375 ; N I ; G 44
+U 74 ; WX 355 ; N J ; G 45
+U 75 ; WX 665 ; N K ; G 46
+U 76 ; WX 563 ; N L ; G 47
+U 77 ; WX 938 ; N M ; G 48
+U 78 ; WX 741 ; N N ; G 49
+U 79 ; WX 719 ; N O ; G 50
+U 80 ; WX 584 ; N P ; G 51
+U 81 ; WX 718 ; N Q ; G 52
+U 82 ; WX 643 ; N R ; G 53
+U 83 ; WX 551 ; N S ; G 54
+U 84 ; WX 593 ; N T ; G 55
+U 85 ; WX 737 ; N U ; G 56
+U 86 ; WX 640 ; N V ; G 57
+U 87 ; WX 942 ; N W ; G 58
+U 88 ; WX 655 ; N X ; G 59
+U 89 ; WX 615 ; N Y ; G 60
+U 90 ; WX 608 ; N Z ; G 61
+U 91 ; WX 319 ; N bracketleft ; G 62
+U 92 ; WX 363 ; N backslash ; G 63
+U 93 ; WX 318 ; N bracketright ; G 64
+U 94 ; WX 559 ; N asciicircum ; G 65
+U 95 ; WX 774 ; N underscore ; G 66
+U 96 ; WX 175 ; N grave ; G 67
+U 97 ; WX 567 ; N a ; G 68
+U 98 ; WX 540 ; N b ; G 69
+U 99 ; WX 462 ; N c ; G 70
+U 100 ; WX 572 ; N d ; G 71
+U 101 ; WX 473 ; N e ; G 72
+U 102 ; WX 348 ; N f ; G 73
+U 103 ; WX 543 ; N g ; G 74
+U 104 ; WX 573 ; N h ; G 75
+U 105 ; WX 313 ; N i ; G 76
+U 106 ; WX 296 ; N j ; G 77
+U 107 ; WX 535 ; N k ; G 78
+U 108 ; WX 296 ; N l ; G 79
+U 109 ; WX 869 ; N m ; G 80
+U 110 ; WX 598 ; N n ; G 81
+U 111 ; WX 538 ; N o ; G 82
+U 112 ; WX 571 ; N p ; G 83
+U 113 ; WX 541 ; N q ; G 84
+U 114 ; WX 445 ; N r ; G 85
+U 115 ; WX 444 ; N s ; G 86
+U 116 ; WX 373 ; N t ; G 87
+U 117 ; WX 597 ; N u ; G 88
+U 118 ; WX 541 ; N v ; G 89
+U 119 ; WX 814 ; N w ; G 90
+U 120 ; WX 553 ; N x ; G 91
+U 121 ; WX 543 ; N y ; G 92
+U 122 ; WX 510 ; N z ; G 93
+U 123 ; WX 351 ; N braceleft ; G 94
+U 124 ; WX 317 ; N bar ; G 95
+U 125 ; WX 351 ; N braceright ; G 96
+U 126 ; WX 449 ; N asciitilde ; G 97
+U 160 ; WX 241 ; N nbspace ; G 98
+U 161 ; WX 260 ; N exclamdown ; G 99
+U 162 ; WX 486 ; N cent ; G 100
+U 163 ; WX 586 ; N sterling ; G 101
+U 164 ; WX 580 ; N currency ; G 102
+U 165 ; WX 701 ; N yen ; G 103
+U 166 ; WX 311 ; N brokenbar ; G 104
+U 167 ; WX 518 ; N section ; G 105
+U 168 ; WX 396 ; N dieresis ; G 106
+U 169 ; WX 858 ; N copyright ; G 107
+U 170 ; WX 405 ; N ordfeminine ; G 108
+U 171 ; WX 458 ; N guillemotleft ; G 109
+U 172 ; WX 593 ; N logicalnot ; G 110
+U 173 ; WX 404 ; N uni00AD ; G 111
+U 174 ; WX 858 ; N registered ; G 112
+U 175 ; WX 0 ; N macron ; G 113
+U 176 ; WX 258 ; N degree ; G 114
+U 177 ; WX 628 ; N plusminus ; G 115
+U 178 ; WX 378 ; N twosuperior ; G 116
+U 179 ; WX 367 ; N threesuperior ; G 117
+U 180 ; WX 201 ; N acute ; G 118
+U 181 ; WX 622 ; N mu ; G 119
+U 182 ; WX 599 ; N paragraph ; G 120
+U 183 ; WX 262 ; N periodcentered ; G 121
+U 184 ; WX 333 ; N cedilla ; G 122
+U 185 ; WX 238 ; N onesuperior ; G 123
+U 186 ; WX 392 ; N ordmasculine ; G 124
+U 187 ; WX 459 ; N guillemotright ; G 125
+U 188 ; WX 729 ; N onequarter ; G 126
+U 189 ; WX 791 ; N onehalf ; G 127
+U 190 ; WX 781 ; N threequarters ; G 128
+U 191 ; WX 455 ; N questiondown ; G 129
+U 192 ; WX 643 ; N Agrave ; G 130
+U 193 ; WX 643 ; N Aacute ; G 131
+U 194 ; WX 643 ; N Acircumflex ; G 132
+U 195 ; WX 643 ; N Atilde ; G 133
+U 196 ; WX 643 ; N Adieresis ; G 134
+U 197 ; WX 644 ; N Aring ; G 135
+U 198 ; WX 1033 ; N AE ; G 136
+U 199 ; WX 615 ; N Ccedilla ; G 137
+U 200 ; WX 593 ; N Egrave ; G 138
+U 201 ; WX 593 ; N Eacute ; G 139
+U 202 ; WX 593 ; N Ecircumflex ; G 140
+U 203 ; WX 593 ; N Edieresis ; G 141
+U 204 ; WX 375 ; N Igrave ; G 142
+U 205 ; WX 375 ; N Iacute ; G 143
+U 206 ; WX 375 ; N Icircumflex ; G 144
+U 207 ; WX 375 ; N Idieresis ; G 145
+U 208 ; WX 698 ; N Eth ; G 146
+U 209 ; WX 741 ; N Ntilde ; G 147
+U 210 ; WX 719 ; N Ograve ; G 148
+U 211 ; WX 719 ; N Oacute ; G 149
+U 212 ; WX 719 ; N Ocircumflex ; G 150
+U 213 ; WX 719 ; N Otilde ; G 151
+U 214 ; WX 719 ; N Odieresis ; G 152
+U 215 ; WX 598 ; N multiply ; G 153
+U 216 ; WX 719 ; N Oslash ; G 154
+U 217 ; WX 737 ; N Ugrave ; G 155
+U 218 ; WX 737 ; N Uacute ; G 156
+U 219 ; WX 737 ; N Ucircumflex ; G 157
+U 220 ; WX 737 ; N Udieresis ; G 158
+U 221 ; WX 615 ; N Yacute ; G 159
+U 222 ; WX 578 ; N Thorn ; G 160
+U 223 ; WX 617 ; N germandbls ; G 161
+U 224 ; WX 567 ; N agrave ; G 162
+U 225 ; WX 567 ; N aacute ; G 163
+U 226 ; WX 567 ; N acircumflex ; G 164
+U 227 ; WX 567 ; N atilde ; G 165
+U 228 ; WX 567 ; N adieresis ; G 166
+U 229 ; WX 567 ; N aring ; G 167
+U 230 ; WX 749 ; N ae ; G 168
+U 231 ; WX 462 ; N ccedilla ; G 169
+U 232 ; WX 473 ; N egrave ; G 170
+U 233 ; WX 473 ; N eacute ; G 171
+U 234 ; WX 473 ; N ecircumflex ; G 172
+U 235 ; WX 473 ; N edieresis ; G 173
+U 236 ; WX 313 ; N igrave ; G 174
+U 237 ; WX 313 ; N iacute ; G 175
+U 238 ; WX 313 ; N icircumflex ; G 176
+U 239 ; WX 313 ; N idieresis ; G 177
+U 240 ; WX 570 ; N eth ; G 178
+U 241 ; WX 598 ; N ntilde ; G 179
+U 242 ; WX 538 ; N ograve ; G 180
+U 243 ; WX 538 ; N oacute ; G 181
+U 244 ; WX 538 ; N ocircumflex ; G 182
+U 245 ; WX 538 ; N otilde ; G 183
+U 246 ; WX 538 ; N odieresis ; G 184
+U 247 ; WX 558 ; N divide ; G 185
+U 248 ; WX 538 ; N oslash ; G 186
+U 249 ; WX 597 ; N ugrave ; G 187
+U 250 ; WX 597 ; N uacute ; G 188
+U 251 ; WX 597 ; N ucircumflex ; G 189
+U 252 ; WX 597 ; N udieresis ; G 190
+U 253 ; WX 543 ; N yacute ; G 191
+U 254 ; WX 546 ; N thorn ; G 192
+U 255 ; WX 543 ; N ydieresis ; G 193
+U 305 ; WX 313 ; N dotlessi ; G 194
+U 338 ; WX 1014 ; N OE ; G 195
+U 339 ; WX 822 ; N oe ; G 196
+U 710 ; WX 310 ; N circumflex ; G 197
+U 711 ; WX 336 ; N caron ; G 198
+U 730 ; WX 258 ; N ring ; G 199
+U 732 ; WX 355 ; N tilde ; G 200
+U 956 ; WX 622 ; N mu ; G 119
+U 8211 ; WX 656 ; N endash ; G 201
+U 8212 ; WX 1156 ; N emdash ; G 202
+U 8216 ; WX 232 ; N quoteleft ; G 203
+U 8217 ; WX 236 ; N quoteright ; G 204
+U 8218 ; WX 231 ; N quotesinglbase ; G 205
+U 8220 ; WX 401 ; N quotedblleft ; G 206
+U 8221 ; WX 405 ; N quotedblright ; G 207
+U 8222 ; WX 411 ; N quotedblbase ; G 208
+U 8226 ; WX 453 ; N bullet ; G 209
+U 8249 ; WX 299 ; N guilsinglleft ; G 210
+U 8250 ; WX 300 ; N guilsinglright ; G 211
+U 8260 ; WX 381 ; N fraction ; G 212
+U 8308 ; WX 351 ; N foursuperior ; G 213
+U 8364 ; WX 679 ; N Euro ; G 214
+U 8722 ; WX 615 ; N minus ; G 215
+EndCharMetrics
+StartKernData 
+StartKernPairs 5979
+
+KPX dollar quotedbl -22
+KPX dollar numbersign -14
+KPX dollar ampersand -30
+KPX dollar asterisk -30
+KPX dollar hyphen -8
+KPX dollar two -30
+KPX dollar four -30
+KPX dollar seven -41
+KPX dollar eight -44
+KPX dollar nine -63
+KPX dollar colon -55
+KPX dollar less -61
+KPX dollar question -32
+KPX dollar at -10
+KPX dollar D -8
+KPX dollar F -15
+KPX dollar G -8
+KPX dollar H -15
+KPX dollar I -10
+KPX dollar J -8
+KPX dollar L -8
+KPX dollar M -16
+KPX dollar P -6
+KPX dollar Q -6
+KPX dollar R -15
+KPX dollar S -6
+KPX dollar T -8
+KPX dollar U -6
+KPX dollar W -17
+KPX dollar X -19
+KPX dollar Y -49
+KPX dollar Z -49
+KPX dollar backslash -49
+KPX dollar underscore -29
+KPX dollar m -25
+KPX dollar o -28
+KPX dollar p -34
+KPX dollar cent -8
+KPX dollar sterling -8
+KPX dollar currency -8
+KPX dollar yen -8
+KPX dollar brokenbar -8
+KPX dollar section -8
+KPX dollar copyright -15
+KPX dollar ordfeminine -15
+KPX dollar guillemotleft -15
+KPX dollar logicalnot -15
+KPX dollar uni00AD -15
+KPX dollar registered -8
+KPX dollar macron -8
+KPX dollar degree -8
+KPX dollar plusminus -8
+KPX dollar twosuperior -17
+KPX dollar threesuperior -6
+KPX dollar acute -15
+KPX dollar mu -15
+KPX dollar paragraph -15
+KPX dollar periodcentered -15
+KPX dollar cedilla -15
+KPX dollar ordmasculine -15
+KPX dollar guillemotright -19
+KPX dollar onequarter -19
+KPX dollar onehalf -19
+KPX dollar threequarters -19
+KPX dollar questiondown -49
+KPX dollar Aacute -49
+KPX dollar Acircumflex -8
+KPX dollar Atilde -30
+KPX dollar Adieresis -15
+KPX dollar Eacute -28
+KPX dollar Ecircumflex -28
+KPX dollar Edieresis -46
+KPX dollar Igrave -43
+KPX dollar Icircumflex -46
+KPX dollar Idieresis -43
+KPX dollar Ograve -25
+
+KPX ampersand degree 23
+KPX ampersand plusminus 7
+
+KPX quotesingle dollar -22
+KPX quotesingle percent -17
+KPX quotesingle quotesingle -17
+KPX quotesingle parenleft -17
+KPX quotesingle parenright -17
+KPX quotesingle plus -17
+KPX quotesingle comma -17
+KPX quotesingle hyphen -16
+KPX quotesingle period -17
+KPX quotesingle slash -17
+KPX quotesingle zero -15
+KPX quotesingle one -17
+KPX quotesingle three -17
+KPX quotesingle five -17
+KPX quotesingle seven -5
+KPX quotesingle eight -13
+KPX quotesingle nine -34
+KPX quotesingle colon -28
+KPX quotesingle semicolon -25
+KPX quotesingle less -38
+KPX quotesingle equal -6
+KPX quotesingle question -14
+KPX quotesingle at -20
+KPX quotesingle E -6
+KPX quotesingle K -7
+KPX quotesingle N -7
+KPX quotesingle O -7
+KPX quotesingle bracketleft -23
+KPX quotesingle underscore -11
+KPX quotesingle grave -20
+KPX quotesingle nbspace -17
+KPX quotesingle exclamdown -7
+KPX quotesingle Agrave -6
+
+KPX parenleft Y -7
+KPX parenleft Z -7
+KPX parenleft backslash -7
+KPX parenleft bracketright -5
+KPX parenleft degree 8
+KPX parenleft questiondown -7
+KPX parenleft Aacute -7
+
+KPX plus ampersand -15
+KPX plus asterisk -15
+KPX plus two -15
+KPX plus four -15
+KPX plus D -23
+KPX plus E -14
+KPX plus F -24
+KPX plus G -23
+KPX plus H -24
+KPX plus I -20
+KPX plus J -23
+KPX plus K -14
+KPX plus L -6
+KPX plus M -16
+KPX plus N -14
+KPX plus O -14
+KPX plus P -18
+KPX plus Q -18
+KPX plus R -24
+KPX plus S -18
+KPX plus T -23
+KPX plus U -18
+KPX plus V -13
+KPX plus W -31
+KPX plus X -21
+KPX plus Y -34
+KPX plus Z -34
+KPX plus backslash -34
+KPX plus bracketright -16
+KPX plus m -24
+KPX plus o -23
+KPX plus p -12
+KPX plus braceright -11
+KPX plus exclamdown -15
+KPX plus cent -23
+KPX plus sterling -23
+KPX plus currency -23
+KPX plus yen -23
+KPX plus brokenbar -23
+KPX plus section -23
+KPX plus dieresis -19
+KPX plus copyright -24
+KPX plus ordfeminine -24
+KPX plus guillemotleft -24
+KPX plus logicalnot -24
+KPX plus uni00AD -24
+KPX plus registered 21
+KPX plus macron -6
+KPX plus degree -6
+KPX plus plusminus 27
+KPX plus twosuperior -24
+KPX plus threesuperior -18
+KPX plus acute -24
+KPX plus mu -24
+KPX plus paragraph -24
+KPX plus periodcentered -24
+KPX plus cedilla -24
+KPX plus ordmasculine -24
+KPX plus guillemotright -21
+KPX plus onequarter -21
+KPX plus onehalf -21
+KPX plus threequarters -21
+KPX plus questiondown -34
+KPX plus Agrave -14
+KPX plus Aacute -34
+KPX plus Acircumflex -18
+KPX plus Atilde -15
+KPX plus Adieresis -24
+KPX plus Eacute -23
+KPX plus Ecircumflex -23
+KPX plus Ograve -24
+KPX plus Oacute -11
+
+KPX comma ampersand -15
+KPX comma asterisk -15
+KPX comma two -15
+KPX comma four -15
+KPX comma D -23
+KPX comma E -14
+KPX comma F -24
+KPX comma G -23
+KPX comma H -24
+KPX comma I -20
+KPX comma J -23
+KPX comma K -14
+KPX comma L -6
+KPX comma M -16
+KPX comma N -14
+KPX comma O -14
+KPX comma P -18
+KPX comma Q -18
+KPX comma R -24
+KPX comma S -18
+KPX comma T -23
+KPX comma U -18
+KPX comma V -13
+KPX comma W -31
+KPX comma X -21
+KPX comma Y -34
+KPX comma Z -34
+KPX comma backslash -34
+KPX comma bracketright -16
+KPX comma m -24
+KPX comma o -23
+KPX comma p -12
+KPX comma braceright -11
+KPX comma exclamdown -15
+KPX comma cent -23
+KPX comma sterling -23
+KPX comma currency -23
+KPX comma yen -23
+KPX comma brokenbar -23
+KPX comma section -23
+KPX comma dieresis -19
+KPX comma copyright -24
+KPX comma ordfeminine -24
+KPX comma guillemotleft -24
+KPX comma logicalnot -24
+KPX comma uni00AD -24
+KPX comma registered 21
+KPX comma macron -6
+KPX comma degree -6
+KPX comma plusminus 27
+KPX comma twosuperior -24
+KPX comma threesuperior -18
+KPX comma acute -24
+KPX comma mu -24
+KPX comma paragraph -24
+KPX comma periodcentered -24
+KPX comma cedilla -24
+KPX comma ordmasculine -24
+KPX comma guillemotright -21
+KPX comma onequarter -21
+KPX comma onehalf -21
+KPX comma threequarters -21
+KPX comma questiondown -34
+KPX comma Agrave -14
+KPX comma Aacute -34
+KPX comma Acircumflex -18
+KPX comma Atilde -15
+KPX comma Adieresis -24
+KPX comma Eacute -23
+KPX comma Ecircumflex -23
+KPX comma Ograve -24
+KPX comma Oacute -11
+
+KPX one dollar -10
+KPX one ampersand -11
+KPX one asterisk -11
+KPX one zero -5
+KPX one two -11
+KPX one four -11
+KPX one D -23
+KPX one E -15
+KPX one F -23
+KPX one G -23
+KPX one H -23
+KPX one I -21
+KPX one J -23
+KPX one K -18
+KPX one M -14
+KPX one N -18
+KPX one O -17
+KPX one P -20
+KPX one Q -20
+KPX one R -23
+KPX one S -20
+KPX one T -23
+KPX one U -20
+KPX one V -30
+KPX one W -31
+KPX one X -19
+KPX one Y -25
+KPX one Z -25
+KPX one bracketleft -11
+KPX one backslash -25
+KPX one bracketright -25
+KPX one m -21
+KPX one o -19
+KPX one braceright -14
+KPX one exclamdown -21
+KPX one cent -23
+KPX one sterling -23
+KPX one currency -23
+KPX one yen -23
+KPX one brokenbar -23
+KPX one section -23
+KPX one dieresis -29
+KPX one copyright -23
+KPX one ordfeminine -23
+KPX one guillemotleft -23
+KPX one logicalnot -23
+KPX one uni00AD -23
+KPX one registered 32
+KPX one degree 8
+KPX one plusminus 38
+KPX one twosuperior -24
+KPX one threesuperior -20
+KPX one acute -23
+KPX one mu -23
+KPX one paragraph -23
+KPX one periodcentered -23
+KPX one cedilla -23
+KPX one ordmasculine -23
+KPX one guillemotright -19
+KPX one onequarter -19
+KPX one onehalf -19
+KPX one threequarters -19
+KPX one questiondown -25
+KPX one Agrave -15
+KPX one Aacute -25
+KPX one Acircumflex -19
+KPX one Atilde -11
+KPX one Adieresis -23
+KPX one Eacute -19
+KPX one Ecircumflex -19
+KPX one Iacute -12
+KPX one Eth -12
+KPX one Ograve -21
+KPX one Oacute -14
+
+KPX two dollar -19
+KPX two percent -14
+KPX two quotesingle -14
+KPX two parenleft -14
+KPX two parenright -14
+KPX two plus -14
+KPX two comma -14
+KPX two hyphen -15
+KPX two period -14
+KPX two slash -14
+KPX two zero -12
+KPX two one -14
+KPX two three -14
+KPX two five -14
+KPX two eight -12
+KPX two nine -29
+KPX two colon -26
+KPX two semicolon -25
+KPX two less -37
+KPX two equal -5
+KPX two question -13
+KPX two at -20
+KPX two E -6
+KPX two K -7
+KPX two N -7
+KPX two O -6
+KPX two bracketleft -18
+KPX two underscore -10
+KPX two grave -19
+KPX two nbspace -14
+KPX two exclamdown -7
+KPX two Agrave -6
+
+KPX four dollar -19
+KPX four percent -14
+KPX four quotesingle -14
+KPX four parenleft -14
+KPX four parenright -14
+KPX four plus -14
+KPX four comma -14
+KPX four hyphen -15
+KPX four period -14
+KPX four slash -14
+KPX four zero -12
+KPX four one -14
+KPX four three -14
+KPX four five -14
+KPX four eight -12
+KPX four nine -29
+KPX four colon -26
+KPX four semicolon -25
+KPX four less -37
+KPX four equal -5
+KPX four question -13
+KPX four at -20
+KPX four E -6
+KPX four K -7
+KPX four N -7
+KPX four O -6
+KPX four bracketleft -18
+KPX four underscore -10
+KPX four grave -19
+KPX four nbspace -14
+KPX four exclamdown -7
+KPX four Agrave -6
+
+KPX eight dollar -37
+KPX eight ampersand -8
+KPX eight asterisk -8
+KPX eight zero -5
+KPX eight two -8
+KPX eight four -8
+KPX eight D -24
+KPX eight E -11
+KPX eight F -24
+KPX eight G -24
+KPX eight H -24
+KPX eight I -16
+KPX eight J -24
+KPX eight K -13
+KPX eight M -10
+KPX eight N -13
+KPX eight O -13
+KPX eight P -14
+KPX eight Q -14
+KPX eight R -24
+KPX eight S -14
+KPX eight T -24
+KPX eight U -14
+KPX eight V -31
+KPX eight W -28
+KPX eight X -13
+KPX eight Y -18
+KPX eight Z -18
+KPX eight bracketleft -14
+KPX eight backslash -18
+KPX eight bracketright -22
+KPX eight m -19
+KPX eight o -18
+KPX eight braceright -15
+KPX eight exclamdown -18
+KPX eight cent -24
+KPX eight sterling -24
+KPX eight currency -24
+KPX eight yen -24
+KPX eight brokenbar -24
+KPX eight section -24
+KPX eight dieresis -27
+KPX eight copyright -24
+KPX eight ordfeminine -24
+KPX eight guillemotleft -24
+KPX eight logicalnot -24
+KPX eight uni00AD -24
+KPX eight registered 42
+KPX eight degree 18
+KPX eight plusminus 47
+KPX eight twosuperior -25
+KPX eight threesuperior -14
+KPX eight acute -24
+KPX eight mu -24
+KPX eight paragraph -24
+KPX eight periodcentered -24
+KPX eight cedilla -24
+KPX eight ordmasculine -24
+KPX eight guillemotright -13
+KPX eight onequarter -13
+KPX eight onehalf -13
+KPX eight threequarters -13
+KPX eight questiondown -18
+KPX eight Agrave -11
+KPX eight Aacute -18
+KPX eight Acircumflex -14
+KPX eight Atilde -8
+KPX eight Adieresis -24
+KPX eight Eacute -18
+KPX eight Ecircumflex -18
+KPX eight Iacute -19
+KPX eight Eth -19
+KPX eight Ograve -19
+KPX eight Oacute -15
+
+KPX less numbersign -19
+KPX less dollar -48
+KPX less ampersand -22
+KPX less asterisk -22
+KPX less two -22
+KPX less four -22
+KPX less D -64
+KPX less E -6
+KPX less F -64
+KPX less G -64
+KPX less H -64
+KPX less I -17
+KPX less J -64
+KPX less K -8
+KPX less M -10
+KPX less N -8
+KPX less O -7
+KPX less P -39
+KPX less Q -39
+KPX less R -64
+KPX less S -39
+KPX less T -64
+KPX less U -39
+KPX less V -66
+KPX less W -46
+KPX less X -38
+KPX less Y -45
+KPX less Z -45
+KPX less bracketleft -40
+KPX less backslash -45
+KPX less bracketright -45
+KPX less underscore 16
+KPX less m -58
+KPX less o -60
+KPX less p -15
+KPX less braceright -36
+KPX less exclamdown -14
+KPX less cent -64
+KPX less sterling -64
+KPX less currency -64
+KPX less yen -64
+KPX less brokenbar -64
+KPX less section -64
+KPX less dieresis -62
+KPX less copyright -64
+KPX less ordfeminine -49
+KPX less guillemotleft -64
+KPX less logicalnot -64
+KPX less uni00AD -35
+KPX less registered 71
+KPX less degree 47
+KPX less plusminus 76
+KPX less twosuperior -48
+KPX less threesuperior -39
+KPX less acute -58
+KPX less mu -64
+KPX less paragraph -64
+KPX less periodcentered -36
+KPX less cedilla -42
+KPX less ordmasculine -64
+KPX less guillemotright -38
+KPX less onequarter -38
+KPX less onehalf -38
+KPX less threequarters -38
+KPX less questiondown -45
+KPX less Agrave -6
+KPX less Aacute -45
+KPX less Acircumflex -38
+KPX less Atilde -22
+KPX less Adieresis -64
+KPX less Eacute -60
+KPX less Ecircumflex -60
+KPX less Iacute -33
+KPX less Eth -33
+KPX less Ograve -58
+KPX less Oacute -36
+
+KPX D quotedbl -13
+KPX D ampersand -9
+KPX D asterisk -9
+KPX D hyphen -14
+KPX D two -9
+KPX D four -9
+KPX D seven -30
+KPX D eight -26
+KPX D nine -62
+KPX D colon -50
+KPX D less -64
+KPX D question -23
+KPX D at -13
+KPX D Y -10
+KPX D Z -10
+KPX D backslash -10
+KPX D underscore -22
+KPX D grave -10
+KPX D o -12
+KPX D p -10
+KPX D questiondown -10
+KPX D Aacute -10
+KPX D Atilde -9
+KPX D Eacute -12
+KPX D Ecircumflex -12
+
+KPX E quotedbl -19
+KPX E dollar -15
+KPX E percent -24
+KPX E quotesingle -24
+KPX E parenleft -24
+KPX E parenright -24
+KPX E plus -24
+KPX E comma -24
+KPX E hyphen -24
+KPX E period -24
+KPX E slash -24
+KPX E zero -19
+KPX E one -24
+KPX E three -24
+KPX E five -24
+KPX E six -6
+KPX E seven -38
+KPX E eight -25
+KPX E nine -54
+KPX E colon -45
+KPX E semicolon -32
+KPX E less -77
+KPX E equal -18
+KPX E question -25
+KPX E at -24
+KPX E I -8
+KPX E K -4
+KPX E M -5
+KPX E N -4
+KPX E O -4
+KPX E W -8
+KPX E Y -7
+KPX E Z -7
+KPX E bracketleft -18
+KPX E backslash -7
+KPX E underscore -22
+KPX E grave -24
+KPX E nbspace -24
+KPX E exclamdown -4
+KPX E questiondown -7
+KPX E Aacute -7
+KPX E Edieresis -22
+KPX E Igrave -14
+KPX E Icircumflex -22
+KPX E Idieresis -14
+
+KPX F ampersand -8
+KPX F asterisk -8
+KPX F hyphen -16
+KPX F two -8
+KPX F four -8
+KPX F seven -10
+KPX F eight -30
+KPX F nine -48
+KPX F colon -41
+KPX F less -74
+KPX F question -13
+KPX F at -14
+KPX F D -4
+KPX F F -4
+KPX F G -4
+KPX F H -4
+KPX F J -4
+KPX F R -4
+KPX F T -4
+KPX F underscore -11
+KPX F grave -12
+KPX F o -11
+KPX F cent -4
+KPX F sterling -4
+KPX F currency -4
+KPX F yen -4
+KPX F brokenbar -4
+KPX F section -4
+KPX F copyright -4
+KPX F ordfeminine -4
+KPX F guillemotleft -4
+KPX F logicalnot -4
+KPX F uni00AD -4
+KPX F twosuperior -6
+KPX F acute -4
+KPX F mu -4
+KPX F paragraph -4
+KPX F periodcentered -4
+KPX F cedilla -4
+KPX F ordmasculine -4
+KPX F Atilde -8
+KPX F Adieresis -4
+KPX F Eacute -11
+KPX F Ecircumflex -11
+
+KPX H quotedbl -13
+KPX H percent -6
+KPX H quotesingle -6
+KPX H parenleft -6
+KPX H parenright -6
+KPX H plus -6
+KPX H comma -6
+KPX H hyphen -24
+KPX H period -6
+KPX H slash -6
+KPX H one -6
+KPX H three -6
+KPX H five -6
+KPX H six -5
+KPX H seven -20
+KPX H eight -30
+KPX H nine -55
+KPX H colon -47
+KPX H less -78
+KPX H question -19
+KPX H at -21
+KPX H underscore -17
+KPX H grave -20
+KPX H nbspace -6
+
+KPX J quotedbl -19
+KPX J percent -20
+KPX J ampersand -7
+KPX J quotesingle -20
+KPX J parenleft -20
+KPX J parenright -20
+KPX J asterisk -7
+KPX J plus -20
+KPX J comma -20
+KPX J hyphen -21
+KPX J period -20
+KPX J slash -20
+KPX J zero -11
+KPX J one -20
+KPX J two -7
+KPX J three -20
+KPX J four -7
+KPX J five -20
+KPX J six -9
+KPX J seven -33
+KPX J eight -22
+KPX J nine -51
+KPX J colon -42
+KPX J less -67
+KPX J equal -14
+KPX J question -26
+KPX J I 109
+KPX J M 104
+KPX J W -8
+KPX J underscore -23
+KPX J o -8
+KPX J nbspace -20
+KPX J twosuperior -4
+KPX J Atilde -7
+KPX J Eacute -8
+KPX J Ecircumflex -8
+
+KPX K quotedbl -15
+KPX K ampersand -10
+KPX K asterisk -10
+KPX K hyphen -15
+KPX K two -10
+KPX K four -10
+KPX K seven -31
+KPX K eight -27
+KPX K nine -69
+KPX K colon -56
+KPX K less -67
+KPX K question -26
+KPX K at -14
+KPX K W -5
+KPX K Y -20
+KPX K Z -20
+KPX K backslash -20
+KPX K underscore -24
+KPX K grave -11
+KPX K o -12
+KPX K p -12
+KPX K questiondown -20
+KPX K Aacute -20
+KPX K Atilde -10
+KPX K Eacute -12
+KPX K Ecircumflex -12
+KPX K Edieresis -13
+KPX K Icircumflex -13
+
+KPX L ampersand -9
+KPX L asterisk -9
+KPX L hyphen -13
+KPX L two -9
+KPX L four -9
+KPX L seven -8
+KPX L eight -26
+KPX L nine -15
+KPX L colon -13
+KPX L less -10
+KPX L question -10
+KPX L Y -10
+KPX L Z -10
+KPX L backslash -10
+KPX L o -14
+KPX L questiondown -10
+KPX L Aacute -10
+KPX L Atilde -9
+KPX L Eacute -14
+KPX L Ecircumflex -14
+
+KPX P quotedbl -15
+KPX P ampersand -10
+KPX P asterisk -10
+KPX P hyphen -15
+KPX P two -10
+KPX P four -10
+KPX P seven -31
+KPX P eight -27
+KPX P nine -69
+KPX P colon -56
+KPX P less -67
+KPX P question -26
+KPX P at -14
+KPX P W -5
+KPX P Y -20
+KPX P Z -20
+KPX P backslash -20
+KPX P underscore -24
+KPX P grave -11
+KPX P o -12
+KPX P p -12
+KPX P questiondown -20
+KPX P Aacute -20
+KPX P Atilde -10
+KPX P Eacute -12
+KPX P Ecircumflex -12
+KPX P Edieresis -13
+KPX P Icircumflex -13
+
+KPX Q quotedbl -15
+KPX Q ampersand -10
+KPX Q asterisk -10
+KPX Q hyphen -15
+KPX Q two -10
+KPX Q four -10
+KPX Q seven -31
+KPX Q eight -27
+KPX Q nine -69
+KPX Q colon -56
+KPX Q less -67
+KPX Q question -26
+KPX Q at -14
+KPX Q W -5
+KPX Q Y -20
+KPX Q Z -20
+KPX Q backslash -20
+KPX Q underscore -24
+KPX Q grave -11
+KPX Q o -12
+KPX Q p -12
+KPX Q questiondown -20
+KPX Q Aacute -20
+KPX Q Atilde -10
+KPX Q Eacute -12
+KPX Q Ecircumflex -12
+KPX Q Edieresis -13
+KPX Q Icircumflex -13
+
+KPX R quotedbl -18
+KPX R dollar -12
+KPX R percent -23
+KPX R quotesingle -23
+KPX R parenleft -23
+KPX R parenright -23
+KPX R plus -23
+KPX R comma -23
+KPX R hyphen -24
+KPX R period -23
+KPX R slash -23
+KPX R zero -16
+KPX R one -23
+KPX R three -23
+KPX R five -23
+KPX R seven -47
+KPX R eight -25
+KPX R nine -54
+KPX R colon -45
+KPX R semicolon -21
+KPX R less -80
+KPX R equal -15
+KPX R question -27
+KPX R at -25
+KPX R I -9
+KPX R K -4
+KPX R M -7
+KPX R N -4
+KPX R O -4
+KPX R W -10
+KPX R Y -15
+KPX R Z -15
+KPX R bracketleft -18
+KPX R backslash -15
+KPX R bracketright -4
+KPX R underscore -25
+KPX R grave -24
+KPX R nbspace -23
+KPX R exclamdown -4
+KPX R questiondown -15
+KPX R Aacute -15
+KPX R Edieresis -15
+KPX R Icircumflex -15
+
+KPX S quotedbl -17
+KPX S dollar -14
+KPX S percent -24
+KPX S quotesingle -24
+KPX S parenleft -24
+KPX S parenright -24
+KPX S plus -24
+KPX S comma -24
+KPX S hyphen -24
+KPX S period -24
+KPX S slash -24
+KPX S zero -19
+KPX S one -24
+KPX S three -24
+KPX S five -24
+KPX S six -6
+KPX S seven -38
+KPX S eight -25
+KPX S nine -54
+KPX S colon -45
+KPX S semicolon -31
+KPX S less -77
+KPX S equal -18
+KPX S question -26
+KPX S at -25
+KPX S I -8
+KPX S K -5
+KPX S M -5
+KPX S N -5
+KPX S O -4
+KPX S W -8
+KPX S Y -7
+KPX S Z -7
+KPX S bracketleft -18
+KPX S backslash -7
+KPX S underscore -24
+KPX S grave -25
+KPX S nbspace -24
+KPX S exclamdown -5
+KPX S questiondown -7
+KPX S Aacute -7
+KPX S Edieresis -8
+KPX S Icircumflex -8
+
+KPX T quotedbl -19
+KPX T percent -20
+KPX T ampersand -7
+KPX T quotesingle -20
+KPX T parenleft -20
+KPX T parenright -20
+KPX T asterisk -7
+KPX T plus -20
+KPX T comma -20
+KPX T hyphen -21
+KPX T period -20
+KPX T slash -20
+KPX T zero -11
+KPX T one -20
+KPX T two -7
+KPX T three -20
+KPX T four -7
+KPX T five -20
+KPX T six -9
+KPX T seven -33
+KPX T eight -22
+KPX T nine -51
+KPX T colon -42
+KPX T less -67
+KPX T equal -14
+KPX T question -26
+KPX T I 109
+KPX T M 104
+KPX T W -8
+KPX T underscore -23
+KPX T o -8
+KPX T nbspace -20
+KPX T twosuperior -4
+KPX T Atilde -7
+KPX T Eacute -8
+KPX T Ecircumflex -8
+
+KPX X quotedbl -12
+KPX X ampersand -9
+KPX X asterisk -9
+KPX X hyphen -15
+KPX X two -9
+KPX X four -9
+KPX X seven -27
+KPX X eight -26
+KPX X nine -58
+KPX X colon -49
+KPX X less -64
+KPX X question -22
+KPX X at -13
+KPX X Y -10
+KPX X Z -10
+KPX X backslash -10
+KPX X underscore -21
+KPX X grave -11
+KPX X o -14
+KPX X p -10
+KPX X questiondown -10
+KPX X Aacute -10
+KPX X Atilde -9
+KPX X Eacute -14
+KPX X Ecircumflex -14
+
+KPX Z quotedbl -17
+KPX Z dollar -28
+KPX Z percent -28
+KPX Z quotesingle -28
+KPX Z parenleft -28
+KPX Z parenright -28
+KPX Z plus -28
+KPX Z comma -28
+KPX Z hyphen -28
+KPX Z period -28
+KPX Z slash -28
+KPX Z zero -22
+KPX Z one -28
+KPX Z three -28
+KPX Z five -28
+KPX Z six -16
+KPX Z seven -27
+KPX Z eight -29
+KPX Z nine -59
+KPX Z colon -50
+KPX Z semicolon -32
+KPX Z less -71
+KPX Z equal -32
+KPX Z question -22
+KPX Z at -27
+KPX Z E -6
+KPX Z I -6
+KPX Z K -5
+KPX Z N -5
+KPX Z O -5
+KPX Z V -4
+KPX Z W -6
+KPX Z underscore -20
+KPX Z grave -27
+KPX Z nbspace -28
+KPX Z exclamdown -5
+KPX Z Agrave -6
+KPX Z Iacute -9
+KPX Z Eth -9
+
+KPX backslash quotedbl -14
+KPX backslash dollar -26
+KPX backslash percent -27
+KPX backslash quotesingle -27
+KPX backslash parenleft -27
+KPX backslash parenright -27
+KPX backslash plus -27
+KPX backslash comma -27
+KPX backslash hyphen -26
+KPX backslash period -27
+KPX backslash slash -27
+KPX backslash zero -21
+KPX backslash one -27
+KPX backslash three -27
+KPX backslash five -27
+KPX backslash six -12
+KPX backslash seven -18
+KPX backslash eight -28
+KPX backslash nine -57
+KPX backslash colon -49
+KPX backslash semicolon -33
+KPX backslash less -64
+KPX backslash equal -27
+KPX backslash question -19
+KPX backslash at -23
+KPX backslash E -4
+KPX backslash K -5
+KPX backslash N -5
+KPX backslash O -5
+KPX backslash underscore -17
+KPX backslash grave -23
+KPX backslash nbspace -27
+KPX backslash exclamdown -5
+KPX backslash Agrave -4
+KPX backslash Iacute -10
+KPX backslash Eth -10
+
+KPX c seven -13
+KPX c eight -21
+KPX c nine -39
+KPX c colon -37
+KPX c less -47
+KPX c I 134
+KPX c M 130
+
+KPX m hyphen -14
+KPX m seven -10
+KPX m eight -16
+KPX m nine -33
+KPX m colon -31
+KPX m less -45
+
+KPX o dollar -32
+KPX o percent -24
+KPX o quotesingle -24
+KPX o parenleft -24
+KPX o parenright -24
+KPX o plus -24
+KPX o comma -24
+KPX o hyphen -21
+KPX o period -24
+KPX o slash -24
+KPX o zero -23
+KPX o one -24
+KPX o three -24
+KPX o five -24
+KPX o seven -62
+KPX o eight -18
+KPX o nine -49
+KPX o colon -46
+KPX o semicolon -32
+KPX o less -71
+KPX o equal -29
+KPX o E -8
+KPX o I -17
+KPX o K -10
+KPX o L -14
+KPX o M -22
+KPX o N -10
+KPX o O -10
+KPX o P -14
+KPX o Q -14
+KPX o S -14
+KPX o U -14
+KPX o V -17
+KPX o W -19
+KPX o X -11
+KPX o Y -43
+KPX o Z -43
+KPX o bracketleft -17
+KPX o backslash -43
+KPX o bracketright -18
+KPX o nbspace -24
+KPX o exclamdown -10
+KPX o dieresis -11
+KPX o registered -14
+KPX o macron -14
+KPX o degree -14
+KPX o plusminus -14
+KPX o threesuperior -14
+KPX o guillemotright -11
+KPX o onequarter -11
+KPX o onehalf -11
+KPX o threequarters -11
+KPX o questiondown -43
+KPX o Agrave -8
+KPX o Aacute -43
+KPX o Acircumflex -14
+
+KPX braceright dollar -26
+KPX braceright percent -22
+KPX braceright quotesingle -22
+KPX braceright parenleft -22
+KPX braceright parenright -22
+KPX braceright plus -22
+KPX braceright comma -22
+KPX braceright hyphen -22
+KPX braceright period -22
+KPX braceright slash -22
+KPX braceright zero -21
+KPX braceright one -22
+KPX braceright three -22
+KPX braceright five -22
+KPX braceright seven -45
+KPX braceright eight -19
+KPX braceright nine -49
+KPX braceright colon -46
+KPX braceright semicolon -20
+KPX braceright less -69
+KPX braceright equal -23
+KPX braceright I -14
+KPX braceright M -15
+KPX braceright W -15
+KPX braceright Y -24
+KPX braceright Z -24
+KPX braceright backslash -24
+KPX braceright bracketright -10
+KPX braceright nbspace -22
+KPX braceright questiondown -24
+KPX braceright Aacute -24
+
+KPX cent quotedbl -13
+KPX cent ampersand -9
+KPX cent asterisk -9
+KPX cent hyphen -14
+KPX cent two -9
+KPX cent four -9
+KPX cent seven -30
+KPX cent eight -26
+KPX cent nine -62
+KPX cent colon -50
+KPX cent less -64
+KPX cent question -23
+KPX cent at -13
+KPX cent Y -10
+KPX cent Z -10
+KPX cent backslash -10
+KPX cent underscore -22
+KPX cent grave -10
+KPX cent o -12
+KPX cent p -10
+KPX cent questiondown -10
+KPX cent Aacute -10
+KPX cent Atilde -9
+KPX cent Eacute -12
+KPX cent Ecircumflex -12
+
+KPX sterling quotedbl -13
+KPX sterling ampersand -9
+KPX sterling asterisk -9
+KPX sterling hyphen -14
+KPX sterling two -9
+KPX sterling four -9
+KPX sterling seven -30
+KPX sterling eight -26
+KPX sterling nine -62
+KPX sterling colon -50
+KPX sterling less -64
+KPX sterling question -23
+KPX sterling at -13
+KPX sterling Y -10
+KPX sterling Z -10
+KPX sterling backslash -10
+KPX sterling underscore -22
+KPX sterling grave -10
+KPX sterling o -12
+KPX sterling p -10
+KPX sterling questiondown -10
+KPX sterling Aacute -10
+KPX sterling Atilde -9
+KPX sterling Eacute -12
+KPX sterling Ecircumflex -12
+
+KPX currency quotedbl -13
+KPX currency ampersand -9
+KPX currency asterisk -9
+KPX currency hyphen -14
+KPX currency two -9
+KPX currency four -9
+KPX currency seven -30
+KPX currency eight -26
+KPX currency nine -62
+KPX currency colon -50
+KPX currency less -64
+KPX currency question -23
+KPX currency at -13
+KPX currency Y -10
+KPX currency Z -10
+KPX currency backslash -10
+KPX currency underscore -22
+KPX currency grave -10
+KPX currency o -12
+KPX currency p -10
+KPX currency questiondown -10
+KPX currency Aacute -10
+KPX currency Atilde -9
+KPX currency Eacute -12
+KPX currency Ecircumflex -12
+
+KPX yen quotedbl -13
+KPX yen ampersand -9
+KPX yen asterisk -9
+KPX yen hyphen -14
+KPX yen two -9
+KPX yen four -9
+KPX yen seven -30
+KPX yen eight -26
+KPX yen nine -62
+KPX yen colon -50
+KPX yen less -64
+KPX yen question -23
+KPX yen at -13
+KPX yen Y -10
+KPX yen Z -10
+KPX yen backslash -10
+KPX yen underscore -22
+KPX yen grave -10
+KPX yen o -12
+KPX yen p -10
+KPX yen questiondown -10
+KPX yen Aacute -10
+KPX yen Atilde -9
+KPX yen Eacute -12
+KPX yen Ecircumflex -12
+
+KPX brokenbar quotedbl -13
+KPX brokenbar ampersand -9
+KPX brokenbar asterisk -9
+KPX brokenbar hyphen -14
+KPX brokenbar two -9
+KPX brokenbar four -9
+KPX brokenbar seven -30
+KPX brokenbar eight -26
+KPX brokenbar nine -62
+KPX brokenbar colon -50
+KPX brokenbar less -64
+KPX brokenbar question -23
+KPX brokenbar at -13
+KPX brokenbar Y -10
+KPX brokenbar Z -10
+KPX brokenbar backslash -10
+KPX brokenbar underscore -22
+KPX brokenbar grave -10
+KPX brokenbar o -12
+KPX brokenbar p -10
+KPX brokenbar questiondown -10
+KPX brokenbar Aacute -10
+KPX brokenbar Atilde -9
+KPX brokenbar Eacute -12
+KPX brokenbar Ecircumflex -12
+
+KPX section quotedbl -13
+KPX section ampersand -9
+KPX section asterisk -9
+KPX section hyphen -14
+KPX section two -9
+KPX section four -9
+KPX section seven -30
+KPX section eight -26
+KPX section nine -62
+KPX section colon -50
+KPX section less -64
+KPX section question -23
+KPX section at -13
+KPX section Y -10
+KPX section Z -10
+KPX section backslash -10
+KPX section underscore -22
+KPX section grave -10
+KPX section o -12
+KPX section p -10
+KPX section questiondown -10
+KPX section Aacute -10
+KPX section Atilde -9
+KPX section Eacute -12
+KPX section Ecircumflex -12
+
+KPX dieresis quotedbl -13
+KPX dieresis percent -6
+KPX dieresis quotesingle -6
+KPX dieresis parenleft -6
+KPX dieresis parenright -6
+KPX dieresis plus -6
+KPX dieresis comma -6
+KPX dieresis hyphen -24
+KPX dieresis period -6
+KPX dieresis slash -6
+KPX dieresis one -6
+KPX dieresis three -6
+KPX dieresis five -6
+KPX dieresis six -5
+KPX dieresis seven -20
+KPX dieresis eight -30
+KPX dieresis nine -55
+KPX dieresis colon -47
+KPX dieresis less -78
+KPX dieresis question -19
+KPX dieresis at -21
+KPX dieresis underscore -17
+KPX dieresis grave -20
+KPX dieresis nbspace -6
+
+KPX copyright ampersand -8
+KPX copyright asterisk -8
+KPX copyright hyphen -16
+KPX copyright two -8
+KPX copyright four -8
+KPX copyright seven -10
+KPX copyright eight -30
+KPX copyright nine -48
+KPX copyright colon -41
+KPX copyright less -74
+KPX copyright question -13
+KPX copyright at -14
+KPX copyright D -4
+KPX copyright F -4
+KPX copyright G -4
+KPX copyright H -4
+KPX copyright I 144
+KPX copyright J -4
+KPX copyright M 140
+KPX copyright R -4
+KPX copyright T -4
+KPX copyright underscore -11
+KPX copyright grave -12
+KPX copyright o -11
+KPX copyright cent -4
+KPX copyright sterling -4
+KPX copyright currency -4
+KPX copyright yen -4
+KPX copyright brokenbar -4
+KPX copyright section -4
+KPX copyright copyright -4
+KPX copyright ordfeminine -4
+KPX copyright guillemotleft -4
+KPX copyright logicalnot -4
+KPX copyright uni00AD -4
+KPX copyright twosuperior -6
+KPX copyright acute -4
+KPX copyright mu -4
+KPX copyright paragraph -4
+KPX copyright periodcentered -4
+KPX copyright cedilla -4
+KPX copyright ordmasculine -4
+KPX copyright Atilde -8
+KPX copyright Adieresis -4
+KPX copyright Eacute -11
+KPX copyright Ecircumflex -11
+
+KPX ordfeminine quotedbl -13
+KPX ordfeminine percent -6
+KPX ordfeminine quotesingle -6
+KPX ordfeminine parenleft -6
+KPX ordfeminine parenright -6
+KPX ordfeminine plus -6
+KPX ordfeminine comma -6
+KPX ordfeminine hyphen -24
+KPX ordfeminine period -6
+KPX ordfeminine slash -6
+KPX ordfeminine one -6
+KPX ordfeminine three -6
+KPX ordfeminine five -6
+KPX ordfeminine six -5
+KPX ordfeminine seven -20
+KPX ordfeminine eight -30
+KPX ordfeminine nine -55
+KPX ordfeminine colon -47
+KPX ordfeminine less -78
+KPX ordfeminine question -19
+KPX ordfeminine at -21
+KPX ordfeminine underscore -17
+KPX ordfeminine grave -20
+KPX ordfeminine nbspace -6
+
+KPX guillemotleft quotedbl -13
+KPX guillemotleft percent -6
+KPX guillemotleft quotesingle -6
+KPX guillemotleft parenleft -6
+KPX guillemotleft parenright -6
+KPX guillemotleft plus -6
+KPX guillemotleft comma -6
+KPX guillemotleft hyphen -24
+KPX guillemotleft period -6
+KPX guillemotleft slash -6
+KPX guillemotleft one -6
+KPX guillemotleft three -6
+KPX guillemotleft five -6
+KPX guillemotleft six -5
+KPX guillemotleft seven -20
+KPX guillemotleft eight -30
+KPX guillemotleft nine -55
+KPX guillemotleft colon -47
+KPX guillemotleft less -78
+KPX guillemotleft question -19
+KPX guillemotleft at -21
+KPX guillemotleft underscore -17
+KPX guillemotleft grave -20
+KPX guillemotleft nbspace -6
+
+KPX logicalnot quotedbl -13
+KPX logicalnot percent -6
+KPX logicalnot quotesingle -6
+KPX logicalnot parenleft -6
+KPX logicalnot parenright -6
+KPX logicalnot plus -6
+KPX logicalnot comma -6
+KPX logicalnot hyphen -24
+KPX logicalnot period -6
+KPX logicalnot slash -6
+KPX logicalnot one -6
+KPX logicalnot three -6
+KPX logicalnot five -6
+KPX logicalnot six -5
+KPX logicalnot seven -20
+KPX logicalnot eight -30
+KPX logicalnot nine -55
+KPX logicalnot colon -47
+KPX logicalnot less -78
+KPX logicalnot question -19
+KPX logicalnot at -21
+KPX logicalnot underscore -17
+KPX logicalnot grave -20
+KPX logicalnot nbspace -6
+
+KPX uni00AD quotedbl -13
+KPX uni00AD percent -6
+KPX uni00AD quotesingle -6
+KPX uni00AD parenleft -6
+KPX uni00AD parenright -6
+KPX uni00AD plus -6
+KPX uni00AD comma -6
+KPX uni00AD hyphen -24
+KPX uni00AD period -6
+KPX uni00AD slash -6
+KPX uni00AD one -6
+KPX uni00AD three -6
+KPX uni00AD five -6
+KPX uni00AD six -5
+KPX uni00AD seven -20
+KPX uni00AD eight -30
+KPX uni00AD nine -55
+KPX uni00AD colon -47
+KPX uni00AD less -78
+KPX uni00AD question -19
+KPX uni00AD at -21
+KPX uni00AD underscore -17
+KPX uni00AD grave -20
+KPX uni00AD nbspace -6
+
+KPX registered ampersand -9
+KPX registered asterisk -9
+KPX registered hyphen -13
+KPX registered two -9
+KPX registered four -9
+KPX registered seven -8
+KPX registered eight -26
+KPX registered nine -15
+KPX registered colon -13
+KPX registered less -10
+KPX registered question -10
+KPX registered Y -10
+KPX registered Z -10
+KPX registered backslash -10
+KPX registered o -14
+KPX registered questiondown -10
+KPX registered Aacute -10
+KPX registered Atilde -9
+KPX registered Eacute -14
+KPX registered Ecircumflex -14
+
+KPX macron ampersand -9
+KPX macron asterisk -9
+KPX macron hyphen -13
+KPX macron two -9
+KPX macron four -9
+KPX macron seven -8
+KPX macron eight -26
+KPX macron nine -15
+KPX macron colon -13
+KPX macron less -10
+KPX macron question -10
+KPX macron Y -10
+KPX macron Z -10
+KPX macron backslash -10
+KPX macron o -14
+KPX macron questiondown -10
+KPX macron Aacute -10
+KPX macron Atilde -9
+KPX macron Eacute -14
+KPX macron Ecircumflex -14
+
+KPX degree ampersand -9
+KPX degree asterisk -9
+KPX degree hyphen -13
+KPX degree two -9
+KPX degree four -9
+KPX degree seven -8
+KPX degree eight -26
+KPX degree nine -15
+KPX degree colon -13
+KPX degree less -10
+KPX degree question -10
+KPX degree Y -10
+KPX degree Z -10
+KPX degree backslash -10
+KPX degree o -14
+KPX degree questiondown -10
+KPX degree Aacute -10
+KPX degree Atilde -9
+KPX degree Eacute -14
+KPX degree Ecircumflex -14
+
+KPX plusminus ampersand -9
+KPX plusminus asterisk -9
+KPX plusminus hyphen -13
+KPX plusminus two -9
+KPX plusminus four -9
+KPX plusminus seven -8
+KPX plusminus eight -26
+KPX plusminus nine -15
+KPX plusminus colon -13
+KPX plusminus less -10
+KPX plusminus question -10
+KPX plusminus Y -10
+KPX plusminus Z -10
+KPX plusminus backslash -10
+KPX plusminus o -14
+KPX plusminus questiondown -10
+KPX plusminus Aacute -10
+KPX plusminus Atilde -9
+KPX plusminus Eacute -14
+KPX plusminus Ecircumflex -14
+
+KPX threesuperior quotedbl -15
+KPX threesuperior ampersand -10
+KPX threesuperior asterisk -10
+KPX threesuperior hyphen -15
+KPX threesuperior two -10
+KPX threesuperior four -10
+KPX threesuperior seven -31
+KPX threesuperior eight -27
+KPX threesuperior nine -69
+KPX threesuperior colon -56
+KPX threesuperior less -67
+KPX threesuperior question -26
+KPX threesuperior at -14
+KPX threesuperior W -5
+KPX threesuperior Y -20
+KPX threesuperior Z -20
+KPX threesuperior backslash -20
+KPX threesuperior underscore -24
+KPX threesuperior grave -11
+KPX threesuperior o -12
+KPX threesuperior p -12
+KPX threesuperior questiondown -20
+KPX threesuperior Aacute -20
+KPX threesuperior Atilde -10
+KPX threesuperior Eacute -12
+KPX threesuperior Ecircumflex -12
+KPX threesuperior Edieresis -13
+KPX threesuperior Icircumflex -13
+
+KPX acute quotedbl -18
+KPX acute dollar -12
+KPX acute percent -23
+KPX acute quotesingle -23
+KPX acute parenleft -23
+KPX acute parenright -23
+KPX acute plus -23
+KPX acute comma -23
+KPX acute hyphen -24
+KPX acute period -23
+KPX acute slash -23
+KPX acute zero -16
+KPX acute one -23
+KPX acute three -23
+KPX acute five -23
+KPX acute seven -47
+KPX acute eight -25
+KPX acute nine -54
+KPX acute colon -45
+KPX acute semicolon -21
+KPX acute less -80
+KPX acute equal -15
+KPX acute question -27
+KPX acute at -25
+KPX acute I -9
+KPX acute K -4
+KPX acute M -7
+KPX acute N -4
+KPX acute O -4
+KPX acute W -10
+KPX acute Y -15
+KPX acute Z -15
+KPX acute bracketleft -18
+KPX acute backslash -15
+KPX acute bracketright -4
+KPX acute underscore -25
+KPX acute grave -24
+KPX acute nbspace -23
+KPX acute exclamdown -4
+KPX acute questiondown -15
+KPX acute Aacute -15
+KPX acute Edieresis -15
+KPX acute Icircumflex -15
+
+KPX mu quotedbl -18
+KPX mu dollar -12
+KPX mu percent -23
+KPX mu quotesingle -23
+KPX mu parenleft -23
+KPX mu parenright -23
+KPX mu plus -23
+KPX mu comma -23
+KPX mu hyphen -24
+KPX mu period -23
+KPX mu slash -23
+KPX mu zero -16
+KPX mu one -23
+KPX mu three -23
+KPX mu five -23
+KPX mu seven -47
+KPX mu eight -25
+KPX mu nine -54
+KPX mu colon -45
+KPX mu semicolon -21
+KPX mu less -80
+KPX mu equal -15
+KPX mu question -27
+KPX mu at -25
+KPX mu I -9
+KPX mu K -4
+KPX mu M -7
+KPX mu N -4
+KPX mu O -4
+KPX mu W -10
+KPX mu Y -15
+KPX mu Z -15
+KPX mu bracketleft -18
+KPX mu backslash -15
+KPX mu bracketright -4
+KPX mu underscore -25
+KPX mu grave -24
+KPX mu nbspace -23
+KPX mu exclamdown -4
+KPX mu questiondown -15
+KPX mu Aacute -15
+KPX mu Edieresis -15
+KPX mu Icircumflex -15
+
+KPX paragraph quotedbl -18
+KPX paragraph dollar -12
+KPX paragraph percent -23
+KPX paragraph quotesingle -23
+KPX paragraph parenleft -23
+KPX paragraph parenright -23
+KPX paragraph plus -23
+KPX paragraph comma -23
+KPX paragraph hyphen -24
+KPX paragraph period -23
+KPX paragraph slash -23
+KPX paragraph zero -16
+KPX paragraph one -23
+KPX paragraph three -23
+KPX paragraph five -23
+KPX paragraph seven -47
+KPX paragraph eight -25
+KPX paragraph nine -54
+KPX paragraph colon -45
+KPX paragraph semicolon -21
+KPX paragraph less -80
+KPX paragraph equal -15
+KPX paragraph question -27
+KPX paragraph at -25
+KPX paragraph I -9
+KPX paragraph K -4
+KPX paragraph M -7
+KPX paragraph N -4
+KPX paragraph O -4
+KPX paragraph W -10
+KPX paragraph Y -15
+KPX paragraph Z -15
+KPX paragraph bracketleft -18
+KPX paragraph backslash -15
+KPX paragraph bracketright -4
+KPX paragraph underscore -25
+KPX paragraph grave -24
+KPX paragraph nbspace -23
+KPX paragraph exclamdown -4
+KPX paragraph questiondown -15
+KPX paragraph Aacute -15
+KPX paragraph Edieresis -15
+KPX paragraph Icircumflex -15
+
+KPX periodcentered quotedbl -18
+KPX periodcentered dollar -12
+KPX periodcentered percent -23
+KPX periodcentered quotesingle -23
+KPX periodcentered parenleft -23
+KPX periodcentered parenright -23
+KPX periodcentered plus -23
+KPX periodcentered comma -23
+KPX periodcentered hyphen -24
+KPX periodcentered period -23
+KPX periodcentered slash -23
+KPX periodcentered zero -16
+KPX periodcentered one -23
+KPX periodcentered three -23
+KPX periodcentered five -23
+KPX periodcentered seven -47
+KPX periodcentered eight -25
+KPX periodcentered nine -54
+KPX periodcentered colon -45
+KPX periodcentered semicolon -21
+KPX periodcentered less -80
+KPX periodcentered equal -15
+KPX periodcentered question -27
+KPX periodcentered at -25
+KPX periodcentered I -9
+KPX periodcentered K -4
+KPX periodcentered M -7
+KPX periodcentered N -4
+KPX periodcentered O -4
+KPX periodcentered W -10
+KPX periodcentered Y -15
+KPX periodcentered Z -15
+KPX periodcentered bracketleft -18
+KPX periodcentered backslash -15
+KPX periodcentered bracketright -4
+KPX periodcentered underscore -25
+KPX periodcentered grave -24
+KPX periodcentered nbspace -23
+KPX periodcentered exclamdown -4
+KPX periodcentered questiondown -15
+KPX periodcentered Aacute -15
+KPX periodcentered Edieresis -15
+KPX periodcentered Icircumflex -15
+
+KPX cedilla quotedbl -18
+KPX cedilla dollar -12
+KPX cedilla percent -23
+KPX cedilla quotesingle -23
+KPX cedilla parenleft -23
+KPX cedilla parenright -23
+KPX cedilla plus -23
+KPX cedilla comma -23
+KPX cedilla hyphen -24
+KPX cedilla period -23
+KPX cedilla slash -23
+KPX cedilla zero -16
+KPX cedilla one -23
+KPX cedilla three -23
+KPX cedilla five -23
+KPX cedilla seven -47
+KPX cedilla eight -25
+KPX cedilla nine -54
+KPX cedilla colon -45
+KPX cedilla semicolon -21
+KPX cedilla less -80
+KPX cedilla equal -15
+KPX cedilla question -27
+KPX cedilla at -25
+KPX cedilla I -9
+KPX cedilla K -4
+KPX cedilla M -7
+KPX cedilla N -4
+KPX cedilla O -4
+KPX cedilla W -10
+KPX cedilla Y -15
+KPX cedilla Z -15
+KPX cedilla bracketleft -18
+KPX cedilla backslash -15
+KPX cedilla bracketright -4
+KPX cedilla underscore -25
+KPX cedilla grave -24
+KPX cedilla nbspace -23
+KPX cedilla exclamdown -4
+KPX cedilla questiondown -15
+KPX cedilla Aacute -15
+KPX cedilla Edieresis -15
+KPX cedilla Icircumflex -15
+
+KPX ordmasculine quotedbl -18
+KPX ordmasculine dollar -12
+KPX ordmasculine percent -23
+KPX ordmasculine quotesingle -23
+KPX ordmasculine parenleft -23
+KPX ordmasculine parenright -23
+KPX ordmasculine plus -23
+KPX ordmasculine comma -23
+KPX ordmasculine hyphen -24
+KPX ordmasculine period -23
+KPX ordmasculine slash -23
+KPX ordmasculine zero -16
+KPX ordmasculine one -23
+KPX ordmasculine three -23
+KPX ordmasculine five -23
+KPX ordmasculine seven -47
+KPX ordmasculine eight -25
+KPX ordmasculine nine -54
+KPX ordmasculine colon -45
+KPX ordmasculine semicolon -21
+KPX ordmasculine less -80
+KPX ordmasculine equal -15
+KPX ordmasculine question -27
+KPX ordmasculine at -25
+KPX ordmasculine I -9
+KPX ordmasculine K -4
+KPX ordmasculine M -7
+KPX ordmasculine N -4
+KPX ordmasculine O -4
+KPX ordmasculine W -10
+KPX ordmasculine Y -15
+KPX ordmasculine Z -15
+KPX ordmasculine bracketleft -18
+KPX ordmasculine backslash -15
+KPX ordmasculine bracketright -4
+KPX ordmasculine underscore -25
+KPX ordmasculine grave -24
+KPX ordmasculine nbspace -23
+KPX ordmasculine exclamdown -4
+KPX ordmasculine questiondown -15
+KPX ordmasculine Aacute -15
+KPX ordmasculine Edieresis -15
+KPX ordmasculine Icircumflex -15
+
+KPX guillemotright quotedbl -12
+KPX guillemotright ampersand -9
+KPX guillemotright asterisk -9
+KPX guillemotright hyphen -15
+KPX guillemotright two -9
+KPX guillemotright four -9
+KPX guillemotright seven -27
+KPX guillemotright eight -26
+KPX guillemotright nine -58
+KPX guillemotright colon -49
+KPX guillemotright less -64
+KPX guillemotright question -22
+KPX guillemotright at -13
+KPX guillemotright Y -10
+KPX guillemotright Z -10
+KPX guillemotright backslash -10
+KPX guillemotright underscore -21
+KPX guillemotright grave -11
+KPX guillemotright o -14
+KPX guillemotright p -10
+KPX guillemotright questiondown -10
+KPX guillemotright Aacute -10
+KPX guillemotright Atilde -9
+KPX guillemotright Eacute -14
+KPX guillemotright Ecircumflex -14
+
+KPX onequarter quotedbl -12
+KPX onequarter ampersand -9
+KPX onequarter asterisk -9
+KPX onequarter hyphen -15
+KPX onequarter two -9
+KPX onequarter four -9
+KPX onequarter seven -27
+KPX onequarter eight -26
+KPX onequarter nine -58
+KPX onequarter colon -49
+KPX onequarter less -64
+KPX onequarter question -22
+KPX onequarter at -13
+KPX onequarter Y -10
+KPX onequarter Z -10
+KPX onequarter backslash -10
+KPX onequarter underscore -21
+KPX onequarter grave -11
+KPX onequarter o -14
+KPX onequarter p -10
+KPX onequarter questiondown -10
+KPX onequarter Aacute -10
+KPX onequarter Atilde -9
+KPX onequarter Eacute -14
+KPX onequarter Ecircumflex -14
+
+KPX onehalf quotedbl -12
+KPX onehalf ampersand -9
+KPX onehalf asterisk -9
+KPX onehalf hyphen -15
+KPX onehalf two -9
+KPX onehalf four -9
+KPX onehalf seven -27
+KPX onehalf eight -26
+KPX onehalf nine -58
+KPX onehalf colon -49
+KPX onehalf less -64
+KPX onehalf question -22
+KPX onehalf at -13
+KPX onehalf Y -10
+KPX onehalf Z -10
+KPX onehalf backslash -10
+KPX onehalf underscore -21
+KPX onehalf grave -11
+KPX onehalf o -14
+KPX onehalf p -10
+KPX onehalf questiondown -10
+KPX onehalf Aacute -10
+KPX onehalf Atilde -9
+KPX onehalf Eacute -14
+KPX onehalf Ecircumflex -14
+
+KPX threequarters quotedbl -12
+KPX threequarters ampersand -9
+KPX threequarters asterisk -9
+KPX threequarters hyphen -15
+KPX threequarters two -9
+KPX threequarters four -9
+KPX threequarters seven -27
+KPX threequarters eight -26
+KPX threequarters nine -58
+KPX threequarters colon -49
+KPX threequarters less -64
+KPX threequarters question -22
+KPX threequarters at -13
+KPX threequarters Y -10
+KPX threequarters Z -10
+KPX threequarters backslash -10
+KPX threequarters underscore -21
+KPX threequarters grave -11
+KPX threequarters o -14
+KPX threequarters p -10
+KPX threequarters questiondown -10
+KPX threequarters Aacute -10
+KPX threequarters Atilde -9
+KPX threequarters Eacute -14
+KPX threequarters Ecircumflex -14
+
+KPX questiondown quotedbl -14
+KPX questiondown dollar -26
+KPX questiondown percent -27
+KPX questiondown quotesingle -27
+KPX questiondown parenleft -27
+KPX questiondown parenright -27
+KPX questiondown plus -27
+KPX questiondown comma -27
+KPX questiondown hyphen -26
+KPX questiondown period -27
+KPX questiondown slash -27
+KPX questiondown zero -21
+KPX questiondown one -27
+KPX questiondown three -27
+KPX questiondown five -27
+KPX questiondown six -12
+KPX questiondown seven -18
+KPX questiondown eight -28
+KPX questiondown nine -57
+KPX questiondown colon -49
+KPX questiondown semicolon -33
+KPX questiondown less -64
+KPX questiondown equal -27
+KPX questiondown question -19
+KPX questiondown at -23
+KPX questiondown E -4
+KPX questiondown K -5
+KPX questiondown N -5
+KPX questiondown O -5
+KPX questiondown underscore -17
+KPX questiondown grave -23
+KPX questiondown nbspace -27
+KPX questiondown exclamdown -5
+KPX questiondown Agrave -4
+KPX questiondown Iacute -10
+KPX questiondown Eth -10
+
+KPX Agrave quotedbl -17
+KPX Agrave dollar -14
+KPX Agrave percent -24
+KPX Agrave quotesingle -24
+KPX Agrave parenleft -24
+KPX Agrave parenright -24
+KPX Agrave plus -24
+KPX Agrave comma -24
+KPX Agrave hyphen -24
+KPX Agrave period -24
+KPX Agrave slash -24
+KPX Agrave zero -19
+KPX Agrave one -24
+KPX Agrave three -24
+KPX Agrave five -24
+KPX Agrave six -6
+KPX Agrave seven -38
+KPX Agrave eight -25
+KPX Agrave nine -54
+KPX Agrave colon -45
+KPX Agrave semicolon -31
+KPX Agrave less -77
+KPX Agrave equal -18
+KPX Agrave question -26
+KPX Agrave at -25
+KPX Agrave I -8
+KPX Agrave K -5
+KPX Agrave M -5
+KPX Agrave N -5
+KPX Agrave O -4
+KPX Agrave W -8
+KPX Agrave Y -7
+KPX Agrave Z -7
+KPX Agrave bracketleft -18
+KPX Agrave backslash -7
+KPX Agrave underscore -24
+KPX Agrave grave -25
+KPX Agrave nbspace -24
+KPX Agrave exclamdown -5
+KPX Agrave questiondown -7
+KPX Agrave Aacute -7
+KPX Agrave Edieresis -8
+KPX Agrave Icircumflex -8
+
+KPX Aacute quotedbl -14
+KPX Aacute dollar -26
+KPX Aacute percent -27
+KPX Aacute quotesingle -27
+KPX Aacute parenleft -27
+KPX Aacute parenright -27
+KPX Aacute plus -27
+KPX Aacute comma -27
+KPX Aacute hyphen -26
+KPX Aacute period -27
+KPX Aacute slash -27
+KPX Aacute zero -21
+KPX Aacute one -27
+KPX Aacute three -27
+KPX Aacute five -27
+KPX Aacute six -12
+KPX Aacute seven -18
+KPX Aacute eight -28
+KPX Aacute nine -57
+KPX Aacute colon -49
+KPX Aacute semicolon -33
+KPX Aacute less -64
+KPX Aacute equal -27
+KPX Aacute question -19
+KPX Aacute at -23
+KPX Aacute E -4
+KPX Aacute K -5
+KPX Aacute N -5
+KPX Aacute O -5
+KPX Aacute underscore -17
+KPX Aacute grave -23
+KPX Aacute nbspace -27
+KPX Aacute exclamdown -5
+KPX Aacute Agrave -4
+KPX Aacute Iacute -10
+KPX Aacute Eth -10
+
+KPX Acircumflex ampersand -9
+KPX Acircumflex asterisk -9
+KPX Acircumflex hyphen -13
+KPX Acircumflex two -9
+KPX Acircumflex four -9
+KPX Acircumflex seven -8
+KPX Acircumflex eight -26
+KPX Acircumflex nine -15
+KPX Acircumflex colon -13
+KPX Acircumflex less -10
+KPX Acircumflex question -10
+KPX Acircumflex Y -10
+KPX Acircumflex Z -10
+KPX Acircumflex backslash -10
+KPX Acircumflex o -14
+KPX Acircumflex questiondown -10
+KPX Acircumflex Aacute -10
+KPX Acircumflex Atilde -9
+KPX Acircumflex Eacute -14
+KPX Acircumflex Ecircumflex -14
+
+KPX Atilde Y -7
+KPX Atilde Z -7
+KPX Atilde backslash -7
+KPX Atilde bracketright -5
+KPX Atilde degree 8
+KPX Atilde questiondown -7
+KPX Atilde Aacute -7
+
+KPX Adieresis quotedbl -13
+KPX Adieresis percent -6
+KPX Adieresis quotesingle -6
+KPX Adieresis parenleft -6
+KPX Adieresis parenright -6
+KPX Adieresis plus -6
+KPX Adieresis comma -6
+KPX Adieresis hyphen -24
+KPX Adieresis period -6
+KPX Adieresis slash -6
+KPX Adieresis one -6
+KPX Adieresis three -6
+KPX Adieresis five -6
+KPX Adieresis six -5
+KPX Adieresis seven -20
+KPX Adieresis eight -30
+KPX Adieresis nine -55
+KPX Adieresis colon -47
+KPX Adieresis less -78
+KPX Adieresis question -19
+KPX Adieresis at -21
+KPX Adieresis underscore -17
+KPX Adieresis grave -20
+KPX Adieresis nbspace -6
+
+KPX Eacute dollar -32
+KPX Eacute percent -24
+KPX Eacute quotesingle -24
+KPX Eacute parenleft -24
+KPX Eacute parenright -24
+KPX Eacute plus -24
+KPX Eacute comma -24
+KPX Eacute hyphen -21
+KPX Eacute period -24
+KPX Eacute slash -24
+KPX Eacute zero -23
+KPX Eacute one -24
+KPX Eacute three -24
+KPX Eacute five -24
+KPX Eacute seven -62
+KPX Eacute eight -18
+KPX Eacute nine -49
+KPX Eacute colon -46
+KPX Eacute semicolon -32
+KPX Eacute less -71
+KPX Eacute equal -29
+KPX Eacute E -8
+KPX Eacute I -17
+KPX Eacute K -10
+KPX Eacute L -14
+KPX Eacute M -22
+KPX Eacute N -10
+KPX Eacute O -10
+KPX Eacute P -14
+KPX Eacute Q -14
+KPX Eacute S -14
+KPX Eacute U -14
+KPX Eacute V -17
+KPX Eacute W -19
+KPX Eacute X -11
+KPX Eacute Y -43
+KPX Eacute Z -43
+KPX Eacute bracketleft -17
+KPX Eacute backslash -43
+KPX Eacute bracketright -18
+KPX Eacute nbspace -24
+KPX Eacute exclamdown -10
+KPX Eacute dieresis -11
+KPX Eacute registered -14
+KPX Eacute macron -14
+KPX Eacute degree -14
+KPX Eacute plusminus -14
+KPX Eacute threesuperior -14
+KPX Eacute guillemotright -11
+KPX Eacute onequarter -11
+KPX Eacute onehalf -11
+KPX Eacute threequarters -11
+KPX Eacute questiondown -43
+KPX Eacute Agrave -8
+KPX Eacute Aacute -43
+KPX Eacute Acircumflex -14
+
+KPX Ecircumflex dollar -32
+KPX Ecircumflex percent -24
+KPX Ecircumflex quotesingle -24
+KPX Ecircumflex parenleft -24
+KPX Ecircumflex parenright -24
+KPX Ecircumflex plus -24
+KPX Ecircumflex comma -24
+KPX Ecircumflex hyphen -21
+KPX Ecircumflex period -24
+KPX Ecircumflex slash -24
+KPX Ecircumflex zero -23
+KPX Ecircumflex one -24
+KPX Ecircumflex three -24
+KPX Ecircumflex five -24
+KPX Ecircumflex seven -62
+KPX Ecircumflex eight -18
+KPX Ecircumflex nine -49
+KPX Ecircumflex colon -46
+KPX Ecircumflex semicolon -32
+KPX Ecircumflex less -71
+KPX Ecircumflex equal -29
+KPX Ecircumflex E -8
+KPX Ecircumflex I -17
+KPX Ecircumflex K -10
+KPX Ecircumflex L -14
+KPX Ecircumflex M -22
+KPX Ecircumflex N -10
+KPX Ecircumflex O -10
+KPX Ecircumflex P -14
+KPX Ecircumflex Q -14
+KPX Ecircumflex S -14
+KPX Ecircumflex U -14
+KPX Ecircumflex V -17
+KPX Ecircumflex W -19
+KPX Ecircumflex X -11
+KPX Ecircumflex Y -43
+KPX Ecircumflex Z -43
+KPX Ecircumflex bracketleft -17
+KPX Ecircumflex backslash -43
+KPX Ecircumflex bracketright -18
+KPX Ecircumflex nbspace -24
+KPX Ecircumflex exclamdown -10
+KPX Ecircumflex dieresis -11
+KPX Ecircumflex registered -14
+KPX Ecircumflex macron -14
+KPX Ecircumflex degree -14
+KPX Ecircumflex plusminus -14
+KPX Ecircumflex threesuperior -14
+KPX Ecircumflex guillemotright -11
+KPX Ecircumflex onequarter -11
+KPX Ecircumflex onehalf -11
+KPX Ecircumflex threequarters -11
+KPX Ecircumflex questiondown -43
+KPX Ecircumflex Agrave -8
+KPX Ecircumflex Aacute -43
+KPX Ecircumflex Acircumflex -14
+
+KPX Edieresis dollar -52
+KPX Edieresis less 11
+KPX Edieresis registered 58
+KPX Edieresis plusminus 49
+KPX Edieresis twosuperior -21
+KPX Edieresis Iacute -90
+KPX Edieresis Eth -90
+
+KPX Igrave dollar -56
+KPX Igrave less 11
+KPX Igrave D -17
+KPX Igrave F -13
+KPX Igrave G -17
+KPX Igrave H -13
+KPX Igrave J -17
+KPX Igrave R -13
+KPX Igrave T -17
+KPX Igrave cent -17
+KPX Igrave sterling -17
+KPX Igrave currency -17
+KPX Igrave yen -17
+KPX Igrave brokenbar -17
+KPX Igrave section -17
+KPX Igrave copyright -13
+KPX Igrave ordfeminine -13
+KPX Igrave guillemotleft -13
+KPX Igrave logicalnot -13
+KPX Igrave uni00AD -13
+KPX Igrave registered 10
+KPX Igrave degree 47
+KPX Igrave plusminus 26
+KPX Igrave twosuperior -22
+KPX Igrave acute -13
+KPX Igrave mu -13
+KPX Igrave paragraph -13
+KPX Igrave periodcentered -13
+KPX Igrave cedilla -13
+KPX Igrave ordmasculine -13
+KPX Igrave Adieresis -13
+KPX Igrave Iacute -101
+KPX Igrave Eth -101
+
+KPX Iacute ampersand -20
+KPX Iacute asterisk -20
+KPX Iacute two -20
+KPX Iacute four -20
+KPX Iacute seven -26
+KPX Iacute eight -29
+KPX Iacute nine -64
+KPX Iacute colon -59
+KPX Iacute less -42
+KPX Iacute M -9
+KPX Iacute Y -58
+KPX Iacute Z -58
+KPX Iacute backslash -58
+KPX Iacute questiondown -58
+KPX Iacute Aacute -58
+KPX Iacute Atilde -20
+KPX Iacute Edieresis -116
+KPX Iacute Igrave -116
+KPX Iacute Icircumflex -116
+KPX Iacute Idieresis -116
+
+KPX Icircumflex dollar -52
+KPX Icircumflex less 11
+KPX Icircumflex registered 58
+KPX Icircumflex plusminus 49
+KPX Icircumflex twosuperior -21
+KPX Icircumflex Iacute -90
+KPX Icircumflex Eth -90
+
+KPX Idieresis dollar -56
+KPX Idieresis less 11
+KPX Idieresis D -17
+KPX Idieresis F -13
+KPX Idieresis G -17
+KPX Idieresis H -13
+KPX Idieresis J -17
+KPX Idieresis R -13
+KPX Idieresis T -17
+KPX Idieresis cent -17
+KPX Idieresis sterling -17
+KPX Idieresis currency -17
+KPX Idieresis yen -17
+KPX Idieresis brokenbar -17
+KPX Idieresis section -17
+KPX Idieresis copyright -13
+KPX Idieresis ordfeminine -13
+KPX Idieresis guillemotleft -13
+KPX Idieresis logicalnot -13
+KPX Idieresis uni00AD -13
+KPX Idieresis registered 10
+KPX Idieresis degree 47
+KPX Idieresis plusminus 26
+KPX Idieresis twosuperior -22
+KPX Idieresis acute -13
+KPX Idieresis mu -13
+KPX Idieresis paragraph -13
+KPX Idieresis periodcentered -13
+KPX Idieresis cedilla -13
+KPX Idieresis ordmasculine -13
+KPX Idieresis Adieresis -13
+KPX Idieresis Iacute -101
+KPX Idieresis Eth -101
+
+KPX Eth ampersand -20
+KPX Eth asterisk -20
+KPX Eth two -20
+KPX Eth four -20
+KPX Eth seven -26
+KPX Eth eight -29
+KPX Eth nine -64
+KPX Eth colon -59
+KPX Eth less -42
+KPX Eth I 38
+KPX Eth M 35
+KPX Eth Y -58
+KPX Eth Z -58
+KPX Eth backslash -58
+KPX Eth questiondown -58
+KPX Eth Aacute -58
+KPX Eth Atilde -20
+KPX Eth Edieresis -116
+KPX Eth Igrave -116
+KPX Eth Icircumflex -116
+KPX Eth Idieresis -116
+
+KPX Ograve hyphen -14
+KPX Ograve seven -10
+KPX Ograve eight -16
+KPX Ograve nine -33
+KPX Ograve colon -31
+KPX Ograve less -45
+
+KPX Oacute dollar -26
+KPX Oacute percent -22
+KPX Oacute quotesingle -22
+KPX Oacute parenleft -22
+KPX Oacute parenright -22
+KPX Oacute plus -22
+KPX Oacute comma -22
+KPX Oacute hyphen -22
+KPX Oacute period -22
+KPX Oacute slash -22
+KPX Oacute zero -21
+KPX Oacute one -22
+KPX Oacute three -22
+KPX Oacute five -22
+KPX Oacute seven -45
+KPX Oacute eight -19
+KPX Oacute nine -49
+KPX Oacute colon -46
+KPX Oacute semicolon -20
+KPX Oacute less -69
+KPX Oacute equal -23
+KPX Oacute I -14
+KPX Oacute M -15
+KPX Oacute W -15
+KPX Oacute Y -24
+KPX Oacute Z -24
+KPX Oacute backslash -24
+KPX Oacute bracketright -10
+KPX Oacute nbspace -22
+KPX Oacute questiondown -24
+KPX Oacute Aacute -24
+EndKernPairs
+EndKernData
+EndFontMetrics

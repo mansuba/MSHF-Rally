@@ -1,0 +1,143 @@
+{exp:channel:entries channel="about_us" url_title="{publisher:segment_2}" }
+{embed="includes/document-head" title="About Us: {title}"}
+
+</head>
+
+<body>
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+	
+{embed="includes/document-nav" section="about"}
+	
+	<!-- Start Nav Backed Header -->
+	<div class="nav-backed-header parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="{site_url}">{phrase:nav_home}</a></li>
+						<li><a href="#">{phrase:nav_about_us}</a></li>
+						<li class="active">{title}</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Nav Backed Header --> 
+	<!-- Start Page Header -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>{title}</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	
+	<!-- Start Content -->
+	<div class="main" role="main">
+		<div id="content" class="content full">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-8">
+						{if page_subtitle}
+						<header class="single-post-header clearfix">
+							<h2 class="post-title">{page_subtitle}</h2>
+						</header>
+						{if:else}
+							<div style="padding-top:50px"></div>
+						{/if}
+						<article class="post-content">
+							{if page_header_image}
+								{exp:switchee variable = "{page_image_location}" parse="inward"}
+									{case value="Top"}
+										<div class="featured-image"> {exp:ce_img:single src="{page_header_image}" allow_scale_larger="yes" width="800" height="400" crop="yes" attributes="alt='{title}' class='img-responsive'"}</div>
+										{page_body}
+									{/case}
+									{case value="Left of Text"}
+										<div class="col-sm-4">
+											<div class="featured-image"> {exp:ce_img:single src="{page_header_image}" allow_scale_larger="yes" width="640" height="400" crop="yes" attributes="alt='{title}' class='img-responsive'"} </div>
+										</div>
+										<div class="col-sm-8">
+											{page_body}
+										</div>
+									{/case}
+									{case value="Right of Text"}
+										<div class="col-sm-8">
+											{page_body}
+										</div>
+										<div class="col-sm-4">
+											<div class="featured-image"> {exp:ce_img:single src="{page_header_image}" allow_scale_larger="yes" width="640" height="400" crop="yes" attributes="alt='{title}' class='img-responsive'"} </div>	
+										</div>
+									{/case}
+									{case value="Below Text"}
+										<div>
+											{page_body}
+										</div>
+										<div class="featured-image"> {exp:ce_img:single src="{page_header_image}" allow_scale_larger="yes" width="800" height="400" crop="yes" attributes="alt='{title}' class='img-responsive'"} </div>
+									{/case}
+								{/exp:switchee}
+							{if:else}
+								{page_body}
+							{/if}
+						</article>
+						
+						{if page_secondary_section_title}
+						<header class="single-post-header clearfix">
+							<h2 class="post-title">Lets get personal</h2>
+						</header>
+						
+						<div class="post-content">
+							{page_table_content}
+							<div class="col-md-6 col-sm-6">
+								<div class="grid-item staff-item">
+									<div class="grid-item-inner">
+										<div class="media-box"> <img alt="" src="http://placehold.it/500x300&amp;text=IMAGE+PLACEHOLDER"> </div>
+										<div class="grid-content">
+											<h4>{title}</h4>
+											{desc}
+										</div>
+									</div>
+								</div>
+							</div>
+							{/page_table_content}
+						</div>
+						{/if}
+						
+					</div>
+					
+					{/exp:channel:entries}
+					
+					<div class="col-xs-12 col-md-4"  style="padding-top:30px">
+						
+						{embed="includes/rightbar-video-sponsors"}
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	{embed="includes/document-footer" sponsors="on"}
+	
+</div>
+
+{embed="includes/document-modals"}
+
+
+{embed="includes/document-footer-jquery"}
+
+<script>
+$(document).ready(function() {
+	$( '.slideshow' ).cycle();
+});	
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Store\\": "src/"
+        },
+        "files": ["src/helpers.php"]
+    },
+    "require": {
+        "expressodev/laravel-codeigniter-db": "~1.0",
+        "guzzle/http": "~3.8.0",
+        "guzzle/plugin-cache": "~3.8.0",
+        "illuminate/database": "~4.1.0",
+        "nesbot/Carbon": "~1.9",
+
+        "omnipay/common": "dev-develop",
+        "omnipay/ogone": "dev-develop",
+
+        "omnipay/2checkout": "~2.0",
+        "omnipay/authorizenet": "~2.0",
+        "omnipay/buckaroo": "~2.0",
+        "omnipay/cardsave": "~2.0",
+        "omnipay/coinbase": "~2.0",
+        "omnipay/dummy": "~2.0",
+        "omnipay/eway": "~2.0",
+        "omnipay/firstdata": "~2.0",
+        "omnipay/gocardless": "~2.0",
+        "omnipay/manual": "~2.0",
+        "omnipay/migs": "~2.0",
+        "omnipay/mollie": "~3.0",
+        "omnipay/multisafepay": "~2.0",
+        "omnipay/netaxept": "~2.0",
+        "omnipay/netbanx": "~2.0",
+        "omnipay/payfast": "~2.0",
+        "omnipay/payflow": "~2.0",
+        "omnipay/paymentexpress": "~2.0",
+        "omnipay/paypal": "~2.0",
+        "omnipay/pin": "~2.0",
+        "omnipay/rabobank": "~2.0",
+        "omnipay/sagepay": "~2.0",
+        "omnipay/securepay": "~2.0",
+        "omnipay/stripe": "~2.0",
+        "omnipay/targetpay": "~2.0",
+        "omnipay/worldpay": "~2.0"
+    },
+    "require-dev": {
+        "guzzle/plugin-mock": "~3.8.0",
+        "mockery/mockery": "~0.9",
+        "phpunit/phpunit": "~4.1.0"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "echo [WARNING] Delete all .git dirs",
+            "rm -rf vendor/**/**/.git"
+        ],
+        "post-update-cmd": [
+            "echo [WARNING] Delete all .git dirs",
+            "rm -rf vendor/**/**/.git"
+        ]
+    },
+    "repositories":
+    [
+        {
+            "type": "git",
+            "url": "https://github.com/devdemon/omnipay-common.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/devdemon/omnipay-ogone.git"
+        }
+    ]
+}

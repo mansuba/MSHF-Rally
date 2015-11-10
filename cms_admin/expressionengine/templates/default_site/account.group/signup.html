@@ -1,0 +1,230 @@
+{embed="includes/document-head" title="Home"}
+
+</head>
+
+<body>
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+	
+{embed="includes/document-nav" section="home"}
+	
+	<!-- Start Nav Backed Header -->
+	<div class="nav-backed-header parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="index.html">{phrase:nav_home}</a></li>
+						<li class="active">{phrase:nav_sign_up}</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Nav Backed Header --> 
+	<!-- Start Page Header -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>{phrase:nav_sign_up}</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	
+	<!-- Start Content -->
+	<div class="main" role="main">
+		<div id="content" class="content full">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-8">
+						
+						{exp:zoo_visitor:registration_form return='{publisher:current_language_code}/account/signup/success'}
+						
+							{if last_segment == "success"}
+							
+								<header class="single-post-header clearfix">
+									<h4 class="post-title">{phrase:account_account_created}</h4>
+								</header>
+								
+								<div class="row">
+									<div class="col-xs-12 col-sm-12" >
+										<p style="padding-top:20px">{phrase:account_account_created_message}</p>
+									</div>
+								</div>
+								
+							{if:elseif logged_in}
+							
+								<header class="single-post-header clearfix">
+									<h4 class="post-title">{phrase:account_warning}</h4>
+								</header>
+								
+								<div class="row">
+									<div class="col-xs-12 col-sm-12">
+										<p>{phrase:account_warning_message}</p>
+									</div>
+								</div>
+								
+							{if:else}
+							
+								<header class="single-post-header clearfix">
+									<h3 class="post-title">{phrase:su_main_title}</h3>
+								</header>
+								
+								<div class="post-content">
+									
+									{phrase:su_description}
+									
+									<div class="spacer-10"></div>
+									<p><strong>{phrase:su_if_you_already_have_an_account} </strong></p>
+									<p><a data-toggle="modal" href="#Login" class="btn btn-default">{phrase:nav_log_in_now}</a></p>
+                                    <div class="alert alert-danger" role="alert">{phrase:login_special_message}</div>
+								</div>
+
+								<div class="spacer-30"></div>
+								
+								<input type="hidden" class="form-control" name="donation_goal" id="donation_goal" value="{sr_goal_amount}" />
+								
+								<input type="hidden" class="form-control" name="language_correspondence" id="language_correspondence" value="{publisher:current_language_code}" />
+								
+								
+								
+								<header class="single-post-header clearfix">
+									<h4 class="post-title">{phrase:su_account_information}</h4>
+								</header>
+								
+								<div class="spacer-20"></div>
+								
+								<div class="row">
+									<div class="col-xs-12 col-sm-6">
+										<label>* {phrase:su_team_name}</label>
+										<input type="text" class="form-control" name="team_name" id="team_name" value="{if team_name}{team_name}{/if}">
+									</div>
+								</div>
+								
+								<div class="spacer-20"></div>
+								
+								<div class="row">
+									<div class="col-xs-6 col-sm-6">
+										<label>* {phrase:su_first_name}</label>
+										<input type="text" class="form-control" name="member_firstname" id="member_firstname" value="{if member_firstname}{member_firstname}{/if}" />
+									</div>
+
+									<div class="col-xs-6 col-sm-6">
+										<label>* {phrase:su_last_name}</label>
+										<input type="text" class="form-control" name="member_lastname" id="member_lastname" value="{if member_lastname}{member_lastname}{/if}" />
+									</div>
+								</div>
+                        
+                                
+                                <div class="row">
+									<div class="col-xs-12">
+										<label>* {phrase:account_street_address}</label>
+										<input type="text" class="form-control" name="account_address" id="account_address" value="{if account_address}{account_address}{/if}" />
+									</div>
+								</div>
+                        
+                                <div class="row">
+									<div class="col-xs-6 col-sm-6">
+										<label>* {phrase:account_city}</label>
+										<input type="text" class="form-control" name="account_city" id="account_city" value="{if account_city}{account_city}{/if}" />
+									</div>
+
+									<div class="col-xs-6 col-sm-6">
+										<label>* {phrase:account_province_state}</label>
+										<input type="text" class="form-control" name="account_province_state" id="account_province_state" value="{if account_province_state}{account_province_state}{/if}" />
+									</div>
+								</div>
+                        
+                                <div class="row">
+									<div class="col-xs-6 col-sm-6">
+										<label>* {phrase:account_postal_code}</label>
+										<input type="text" class="form-control" name="account_postal_zip_code" id="account_postal_zip_code" value="{if account_postal_zip_code}{account_postal_zip_code}{/if}" />
+									</div>
+
+									<div class="col-xs-6 col-sm-6">
+										<label>* {phrase:account_country}</label>
+										<input type="text" class="form-control" name="account_country" id="account_country" value="{if account_country}{account_country}{/if}" />
+									</div>
+								</div>        
+                        
+
+								<div class="row">
+									<div class="col-xs-6 col-sm-6">
+										<label>* {phrase:su_email_address}</label>
+										<input type="text" class="form-control" name="email" id="email" value="{if email}{email}{/if}" />
+									</div>
+                                    
+                                    <div class="col-xs-6 col-sm-6">
+										<label>* {phrase:account_telephone}</label>
+										<input type="text" class="form-control" name="account_phone_number" id="account_phone_number" value="{if account_phone_number}{account_phone_number}{/if}" />
+									</div>
+								</div>
+							
+								<div class="row">
+									<div class="col-xs-6 col-sm-6">
+										<label>* {phrase:su_password}</label>
+										<input class="form-control" type="password" name="password" id="password" value="{if password}{password}{/if}"/>
+									</div>
+								
+									<div class="col-xs-6 col-sm-6">
+										<label>* {phrase:su_confirm_password}</label>
+										<input class="form-control" type="password" name="password_confirm" id="password_confirm" value="{if password_confirm}{password_confirm}{/if}"/>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-xs-12 col-sm-12">
+										<div class="checkbox">
+											<label>
+												<input type='checkbox' name='accept_terms' value='y' {if accept_terms == "y"}checked="checked"{/if}> * {phrase:su_i_accept_the_terms}
+											</label>
+										</div>
+									</div>
+								</div>
+								
+							
+								<div class="post-content">
+									<button type="submit" class="btn btn-danger btn-lg">{phrase:su_create_my_account}</button>
+								</div>
+							{/if}
+						{/exp:zoo_visitor:registration_form}
+						
+					</div>
+					
+					
+					
+					<div class="col-xs-12 col-md-4 "  style="padding-top:40px">
+					
+						{embed="includes/rightbar-pods"}
+						
+					</div>
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	{embed="includes/document-footer"}
+	
+</div>
+
+{embed="includes/document-modals"}
+
+
+{embed="includes/document-footer-jquery"}
+
+<script>
+$(document).ready(function() {
+	$( '.slideshow' ).cycle();
+});	
+</script>
+</body>
+</html>

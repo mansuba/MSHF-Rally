@@ -1,0 +1,177 @@
+{exp:store:orders order_hash="{embed:id}"}
+
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+	<tr>
+    <td align="center" valign="top"><h3 style="padding:0; margin:0">{phrase:tax_official_receipt_for_income_tax_purposes}</h3></td>
+  </tr>
+  <tr>	
+    <td align="center" valign="top" style="padding:10px">{phrase:tax_registration_number}</td>
+  </tr>
+
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td width="50%" valign="top"><img src="http://sinairally.com/assets/images/invoice-logo.png" alt="Invoice Logo" width="280" ></td>
+          <td width="50%" align="right" valign="top" style="padding:10px"><table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+            <tr>
+              <td colspan="2" align="center"><h3>{phrase:tax_receipt}</h3></td>
+            </tr>
+            <tr>
+              <td width="70%"><strong>N<sup>o</sup>:</strong></td>
+              <td width="30%" align="right">SR{order_id}</td>
+            </tr>
+            <tr>
+              <td width="70%"><strong>{phrase:tax_gift_date}: </strong></td>
+              <td width="30%" align="right">{order_date format="%d/%m/%Y"}</td>
+            </tr>
+            <tr>
+              <td width="70%"><strong>{phrase:tax_issued_on}:</strong></td>
+              <td width="30%" align="right">{order_date format="%d/%m/%Y"}</td>
+            </tr>
+            <tr>
+              <td width="70%"><strong>{phrase:tax_gift_amount}:</strong></td>
+              <td width="30%" align="right">**{order_total}</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+				<div style="border:1px #000 solid; margin:20px 0 0; padding:10px">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<td width="70%"><strong>{phrase:tax_receipt_amount}:</strong></td>
+	              			<td width="30%" align="right">**{order_total}</td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+            </tr>
+          </table></td>
+        </tr>
+      </tbody>
+    </table></td>
+  </tr>
+  <tr>
+    <td style="padding-top:40px">
+		{if order_custom3}
+			{order_custom3}<br />
+		{if:else}
+			{billing_first_name} {billing_last_name}<br />
+		{/if}
+		{billing_address1}{if billing_address2}, {billing_address2}{/if}<br />
+		{billing_city}, {billing_state}<br />
+		{billing_country} {billing_postcode}
+	</td>
+  </tr>
+  <tr>
+    <td style="padding-top:0px"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td width="60%" align="left" valign="bottom">{phrase:tax_canada_revenue_agency}</td>
+          <td width="40%" align="center" valign="top">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+			<tr><td align="center"><h3><p>{phrase:tax_thank_you}</p></h3></td></tr>
+              <tr>
+                <td align="center"><img src="http://sinairally.com/assets/images/email/wendy-sig.jpg" alt="Invoice Logo" style="width:200px"></td>
+              </tr>
+              <tr>
+                <td align="center" style="border-top:1px solid #000;">{phrase:tax_authorized_signature}</td>
+              </tr>
+            </tbody>
+          </table></td>
+        </tr>
+      </tbody>
+    </table></td>
+  </tr>
+<tr><td align="center" style="padding-top:20px">	<small>{phrase:tax_sinai_address}</small></td></tr>
+</table>
+<div style="border-top:1px #000 dashed; width:100%; margin-top:40px; "></div>
+<table width="100%" border="0" cellspacing="0" cellpadding="4" style="padding-top:40px">
+	<tr>
+    <td align="center" valign="top"><h3 style="padding:0; margin:0">{phrase:tax_retain_this_copy_for_your_records}</h3></td>
+  </tr>
+  <tr>	
+    <td align="center" valign="top" style="padding:10px">{phrase:tax_registration_number}</td>
+  </tr>
+
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td width="50%" valign="top"><img src="http://sinairally.com/assets/images/invoice-logo.png" alt="Invoice Logo" width="280" ></td>
+          <td width="50%" align="right" valign="top" style="padding:10px"><table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+            <tr>
+              <td colspan="2" align="center"><h3>{phrase:tax_receipt}</h3></td>
+            </tr>
+            <tr>
+              <td width="70%"><strong>N<sup>o</sup>:</strong></td>
+              <td width="30%" align="right">SR{order_id}</td>
+            </tr>
+            <tr>
+              <td width="70%"><strong>{phrase:tax_gift_date}: </strong></td>
+              <td width="30%" align="right">{order_date format="%d/%m/%Y"}</td>
+            </tr>
+            <tr>
+              <td width="70%"><strong>{phrase:tax_issued_on}:</strong></td>
+              <td width="30%" align="right">{order_date format="%d/%m/%Y"}</td>
+            </tr>
+            <tr>
+              <td width="70%"><strong>{phrase:tax_gift_amount}:</strong></td>
+              <td width="30%" align="right">**{order_total}</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+				<div style="border:1px #000 solid; margin:20px 0 0; padding:10px">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<td width="70%"><strong>{phrase:tax_receipt_amount}:</strong></td>
+	              			<td width="30%" align="right">**{order_total}</td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+            </tr>
+          </table></td>
+        </tr>
+      </tbody>
+    </table></td>
+  </tr>
+  <tr>
+    <td style="padding-top:40px">
+		{if order_custom3}
+			{order_custom3}<br />
+		{if:else}
+			{billing_first_name} {billing_last_name}<br />
+		{/if}
+		{billing_address1}{if billing_address2}, {billing_address2}{/if}<br />
+		{billing_city}, {billing_state}<br />
+		{billing_country} {billing_postcode}
+	</td>
+  </tr>
+  <tr>
+    <td style="padding-top:0px"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td width="60%" align="left" valign="bottom">{phrase:tax_canada_revenue_agency}</td>
+          <td width="40%" align="center" valign="top">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+			<tr><td align="center"><h3><p>{phrase:tax_thank_you}</p></h3></td></tr>
+              <tr>
+                <td align="center"><img src="http://sinairally.com/assets/images/email/wendy-sig.jpg" alt="Invoice Logo" style="width:200px"></td>
+              </tr>
+              <tr>
+                <td align="center" style="border-top:1px solid #000;">{phrase:tax_authorized_signature}</td>
+              </tr>
+            </tbody>
+          </table></td>
+        </tr>
+      </tbody>
+    </table></td>
+  </tr>
+<tr><td align="center" style="padding-top:20px">	<small>{phrase:tax_sinai_address}</small></td></tr>
+</table>
+
+{/exp:store:orders}

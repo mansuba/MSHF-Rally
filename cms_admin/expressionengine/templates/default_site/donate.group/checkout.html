@@ -1,0 +1,333 @@
+{embed="includes/document-head" title="{phrase:checkout}"}
+
+</head>
+
+<body>
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+	
+{embed="includes/document-nav" section=""}
+	
+	<!-- Start Nav Backed Header -->
+	<div class="nav-backed-header parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="index.html">{phrase:nav_home}</a></li>
+						<li class="active">{phrase:nav_donate}</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Nav Backed Header --> 
+	<!-- Start Page Header -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>{phrase:checkout_donation_and_billing_details}</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	
+	<!-- Start Content -->
+	<div class="main" role="main">
+		<div id="content" class="content full">
+			<div class="container">
+
+				
+				<div class="spacer-30"></div>
+				{exp:store:checkout
+				    form_class="form-horizontal"
+				    next="/{publisher:current_language_code}/donate/checkout2"
+				    error_handling="inline"
+				    error_delimiters='<span class="help-block" style="color:#ff0000; margin-top: -15px;">|</span>'
+				    require="first_name|last_name|address1|city|country|postcode|phone"}
+
+				    {if no_items}
+				        {redirect="/"}
+				    {/if}
+					<input type="hidden" name="shipping_same_as_billing" value="1" />
+				<div class="row">
+					
+					<div class="col-xs-12 col-sm-8">	
+						
+							
+						<header class="listing-header">
+							<h3>{phrase:checkout_your_billing_information}</h3>
+						</header>
+						
+						<div class="spacer-20"></div>
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{phrase:checkout_i_am_making_a_donation}</label>
+								<div class="col-sm-8">
+									<div class="radio">
+										<label>
+											<input type="radio" name="order_custom1" value="Individual" {if order_custom1 == 'Individual'}checked{/if}>
+											{phrase:checkout_as_an_individual}
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="order_custom1" value="Organization" {if order_custom1 == 'Organization'}checked{/if}>
+											{phrase:checkout_on_behalf_of_an_organization}
+										</label>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{phrase:account_first_name} *</label>
+								<div class="col-sm-2">
+									<select class="form-control" name="order_custom7">
+
+										<option {if order_custom7 == "{phrase:account_mr}"}selected="selected"{/if}>{phrase:account_mr}</option>
+										<option {if order_custom7 == "{phrase:account_mrs}"}selected="selected"{/if}>{phrase:account_mrs}</option>
+										<option {if order_custom7 == "{phrase:account_ms}"}selected="selected"{/if}>{phrase:account_ms}</option>
+
+									</select>
+								</div>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" name="billing_first_name" value="{billing_first_name}">
+									{error:billing_first_name}
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{phrase:account_last_name} *</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="billing_last_name" value="{billing_last_name}">
+									{error:billing_last_name}
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{phrase:account_organization}</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="order_custom2" value="{order_custom2}">
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{phrase:checkout_name_on_tax_receipt}</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="order_custom3" value="{order_custom3}">
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{phrase:checkout_name_to_be_displayed_on_the_website}</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="order_custom4" value="{order_custom4}">
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{phrase:account_street_address} *</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="billing_address1" value="{billing_address1}">
+									{error:billing_address1}
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{phrase:account_street_address} 2</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="billing_address2" value="{billing_address2}">
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{phrase:account_city} *</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="billing_city" value="{billing_city}">
+									{error:billing_city}
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{phrase:account_province_state} *</label>
+								<div class="col-sm-8">
+									<select name="billing_state" class="form-control">
+									    {billing_state_options}
+									</select>
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{phrase:account_country} *</label>
+								<div class="col-sm-8">
+									<select name="billing_country" class="form-control">
+									    {billing_country_options}
+									</select>
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{phrase:account_postal_code} *</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="billing_postcode" value="{billing_postcode}">
+									{error:billing_postcode}
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{phrase:account_telephone} *</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="billing_phone" value="{billing_phone}">
+									{error:billing_phone}
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{phrase:account_email_address} *</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="order_email" >
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label"></label>
+								<div class="col-sm-8">
+									<p>{phrase:checkout_a_tax_receipt_will_be_mailed_to_the_above_address}</p>
+								</div>
+							</div>
+						</div>
+						
+						{items}
+						{exp:channel:entries entry_id="{entry_id}" status="Members-id5" limit="1"}
+						{if entry_id != "7"}
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">{phrase:checkout_leave_a_message}</label>
+								<div class="col-sm-8">
+									<textarea class="form-control" name="order_custom5"></textarea>
+								</div>
+							</div>
+						</div>
+						{/if}
+						{/exp:channel:entries}
+						{/items}
+						
+						
+						<hr />
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label"></label>
+								<div class="col-sm-8">
+									<input type="submit" name="next" value="{phrase:checkout_review_donation}" class="btn btn-primary btn-lg" />
+								</div>
+							</div>
+						</div>
+						
+							
+					</div>
+					
+					<div class="col-xs-12 col-sm-4">
+						<header class="listing-header">
+							<h3>{phrase:checkout_donation_details}</h3>
+						</header>
+						
+						<div class="spacer-20"></div>
+						
+						{items}
+						{exp:channel:entries entry_id="{entry_id}" status="Members-id5"}
+						<div class="panel panel-default">
+							
+							<div class="panel-heading">
+								<h3 class="panel-title">{phrase:in_support_of} {if entry_id == "7"}{phrase:checkout_general_donation}{if:else}{team_name}{/if}</h3>
+							</div>
+							
+							<div class="panel-body">
+								{if entry_id != "7"}
+								<h4 style="text-transform: capitalize !important">{driver_first_name} {driver_last_name}</h4>
+								<p><strong>{phrase:checkout_car}: </strong>{car_year} {car_make} {car_model}</p>
+								{/if}
+								<p><strong>{phrase:checkout_donation_amount}:</strong> {order_total}</p>
+								{if entry_id != "7"}
+								<a href="{path='team/{url_title}'}" class="btn btn-default">{phrase:checkout_visit_team_page}</a>
+								{/if}
+							</div>
+
+						</div>
+						<div class="spacer-30"></div>
+						{/exp:channel:entries}
+						{/items}
+						
+					</div>
+				</div>
+				{/exp:store:checkout}
+			</div>
+		</div>
+	</div>
+	
+	{embed="includes/document-footer" sponsors="off"}
+	
+</div>
+
+{embed="includes/document-modals"}
+
+
+{embed="includes/document-footer-jquery"}
+
+<script>
+$(document).ready(function() {
+	$('.slideshow').cycle();
+	
+	$('input[name="payment_method"]').change(function(){
+		if($(this).val() === 'Manual') {
+			$('.creditCard').slideUp();
+		} else {
+			$('.creditCard').slideDown();
+		}
+	});
+	
+	
+	if (input[name="payment_method"].val() == 'Manual') {
+		$('.creditCard').hide();
+	}
+	
+});	
+</script>
+</body>
+</html>

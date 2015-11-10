@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Date: Sun, 19 May 2013 11:57:32 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Pragma: no-cache
+Content-Length: 633
+Content-Type: application/xml
+
+<?xml version="1.0"?>
+<RatingServiceSelectionResponse><Response><TransactionReference><CustomerContext>Rating and Service</CustomerContext><XpciVersion>1.0</XpciVersion></TransactionReference><ResponseStatusCode>0</ResponseStatusCode><ResponseStatusDescription>Failure</ResponseStatusDescription><Error><ErrorSeverity>Hard</ErrorSeverity><ErrorCode>10002</ErrorCode><ErrorDescription>The XML document is well formed but the document is not valid</ErrorDescription><ErrorLocation><ErrorLocationElementName>AccessRequest/AccessLicenseNumber</ErrorLocationElementName></ErrorLocation></Error></Response></RatingServiceSelectionResponse>

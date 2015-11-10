@@ -1,0 +1,139 @@
+{embed="includes/document-head" title="Home"}
+
+</head>
+
+<body>
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+	
+{embed="includes/document-nav" section="home"}
+	
+	<!-- Start Nav Backed Header -->
+	<div class="nav-backed-header parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="index.html">Home</a></li>
+						<li class="active">Account</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Nav Backed Header --> 
+	<!-- Start Page Header -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Member Information</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	
+	<!-- Start Content -->
+	<div class="main" role="main">
+		<div id="content" class="content full">
+			<div class="container">
+				<div class="row">
+					{embed="account/menu" section="member"}
+				</div>
+				
+				<div class="spacer-30"></div>
+				
+				
+				{if segment_3=='success'}
+				<div class="alert alert-success alert-dismissable">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <strong>Success!</strong> Your Changes Have Been Saved!
+				</div>
+				
+				<div class="spacer-30"></div>
+				{/if}
+				
+				
+				<div class="row">
+					<div class="col-xs-12 col-md-12">
+						{exp:zoo_visitor:update_form return="account/member/success"}
+							<header class="single-post-header clearfix">
+								<h3 class="post-title">Reset Your Member Information</h3>
+							</header>
+							
+							<div class="post-content">
+								<p>Please note any changes you do on this page will require that you enter your current password to allow changes to be completed. When changing your password, you will be asked to login again for security reasons.</p>
+							</div>
+							
+							<div class="spacer-20"></div>
+							<div class="row">
+								<div class="col-xs-6 col-sm-6">
+									<label>First Name</label>
+									<input type="text" class="form-control" name="member_firstname" id="member_firstname" value="{if member_firstname}{member_firstname}{/if}">
+								</div>
+
+								<div class="col-xs-6 col-sm-6">
+									<label>Last name</label>
+									<input type="text" class="form-control" name="member_lastname" id="member_lastname" value="{if member_lastname}{member_lastname}{/if}">
+								</div>
+							
+							</div>
+
+							<div class="row">
+								<div class="col-xs-6 col-sm-6">
+									<label>Email Address</label>
+									<input type="text" class="form-control" name="username" id="username" value="{if username}{username}{/if}">
+								</div>
+							</div>
+						
+						
+							<div class="row">
+								<div class="col-xs-6 col-sm-6">
+									<label>Password</label>
+									<input class="form-control" type="password" name="password" id="password">
+								</div>
+							
+								<div class="col-xs-6 col-sm-6">
+									<label>Confirm Password</label>
+									<input class="form-control" type="password" name="password_confirm" id="password_confirm">
+								</div>
+							</div>
+							
+							<hr />
+							
+							<div class="row">
+								<div class="col-xs-6 col-sm-6">
+									<label>Current Password</label>
+									<input class="form-control" type="password" name="current_password" id="current_password">
+								</div>
+							</div>
+							
+							<div class="post-content">
+								<button type="submit" class="btn btn-danger">Save Changes</button>
+							</div>
+						{/exp:zoo_visitor:update_form}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	{embed="includes/document-footer" sponsors="off"}
+	
+</div>
+
+{embed="includes/document-modals"}
+
+
+{embed="includes/document-footer-jquery"}
+
+<script>
+$(document).ready(function() {
+	$( '.slideshow' ).cycle();
+});	
+</script>
+</body>
+</html>

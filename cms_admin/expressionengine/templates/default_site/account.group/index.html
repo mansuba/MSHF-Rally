@@ -1,0 +1,102 @@
+{embed="includes/document-head" title="{phrase:account}"}
+
+</head>
+
+<body>
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+	
+{embed="includes/document-nav" section=""}
+	
+	<!-- Start Nav Backed Header -->
+	<div class="nav-backed-header parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="index.html">{phrase:nav_home}</a></li>
+						<li class="active">{phrase:account}</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Nav Backed Header --> 
+	<!-- Start Page Header -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>{phrase:account_management}</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	
+	<!-- Start Content -->
+	<div class="main" role="main">
+		<div id="content" class="content full">
+			<div class="container">
+				<div class="row">
+					{embed="account/menu" section="account"}
+				</div>
+				
+				<div class="spacer-30"></div>
+				
+				{if segment_2=='success'}
+				<div class="alert alert-success alert-dismissable">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <strong>{phrase:success}</strong> {phrase:account_your_changes_have_been_saved}
+				</div>
+				
+				<div class="spacer-30"></div>
+				{/if}
+				
+				<div class="row">
+					<div class="col-xs-12 col-md-12">
+						{exp:zoo_visitor:update_form return="/{publisher:current_language_code}/account/success"}
+							<header class="single-post-header clearfix">
+								<h3>{phrase:account_make_sure_to_fill_out_all_fields}</h3>
+							</header>
+							
+							
+							<div class="row post-content">
+								<div class="col-xs-6 col-sm-6">
+									<label>{phrase:account_language_of_correspondence}: </label>
+									{field:language_correspondence}
+								</div>
+							</div>
+
+							
+							<div class="spacer-20"></div>
+
+							
+							<div class="row post-content">
+								<button type="submit" class="btn btn-danger">{phrase:account_save_changes}</button>
+							</div>
+						{/exp:zoo_visitor:update_form}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	{embed="includes/document-footer" sponsors="off"}
+	
+</div>
+
+{embed="includes/document-modals"}
+
+
+{embed="includes/document-footer-jquery"}
+
+<script>
+$(document).ready(function() {
+	$( '.slideshow' ).cycle();
+});	
+</script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+{embed="includes/document-head" title="{phrase:nav_home}"}
+
+</head>
+
+<body>
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+	
+{embed="includes/document-nav" section="home"}
+	
+	<!-- Start Hero Slider -->
+	<div class="hero-slider flexslider clearfix" data-autoplay="yes" data-pagination="yes" data-arrows="yes" data-style="fade" data-pause="yes">
+		<ul class="slides">
+			{exp:low_variables:pair var="sw_jumbotron_{publisher:current_language_code}"}
+			<li class="parallax" style="background-image:url({image});"></li>
+			{/exp:low_variables:pair}
+		</ul>
+	</div>
+	<!-- End Hero Slider -->
+	
+	<!-- Start Notice Bar -->
+	<div class="notice-bar">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-xs-6 notice-bar-title"> <span class="notice-bar-title-icon hidden-xs"><i class="fa fa-calendar fa-3x"></i></span> <span class="title-note">{phrase:save_the_date}</span> <strong>{phrase:next_event}</strong> </div>
+				<div class="col-md-3 col-xs-6 notice-bar-event-title">
+					<h5 style="letter-spacing:-1px"><a href="assets/single-event.html">{phrase:sinai_rally_year}</a></h5>
+					<span class="meta-data">{sr_event_date_{publisher:current_language_code}}</span>
+				</div>
+				<div id="counter" class="col-md-4 col-sm-6 col-xs-12 counter" data-date="{sr_event_date_en}">
+					<div class="timer-col"> <span id="days"></span> <span class="timer-type">{phrase:days}</span> </div>
+					<div class="timer-col"> <span id="hours"></span> <span class="timer-type">hrs</span> </div>
+					<div class="timer-col"> <span id="minutes"></span> <span class="timer-type">mins</span> </div>
+					<div class="timer-col"> <span id="seconds"></span> <span class="timer-type">secs</span> </div>
+				</div>
+				<div class="col-md-2 col-sm-6 hidden-xs"> <a href="{path='account/signup'}" class="btn btn-primary btn-lg btn-block">{phrase:sign_up}</a> </div>
+			</div>
+		</div>
+	</div>
+	<!-- End Notice Bar -->
+	
+	<!-- Start Content -->
+	<div class="main" role="main">
+		<div id="content" class="content full">
+			<div class="container">
+                
+                {if sr_home_cta_banner_{publisher:current_language_code} != ''}
+                <div class="row">
+                    <div class="col-sm-12" style="padding-bottom:20px">
+                        <img src="{sr_home_cta_banner_{publisher:current_language_code}}" class="img-responsive" />
+                    </div>
+                </div>
+                {/if}
+				
+				<div class="row"> 
+					<!-- Start Featured Blocks -->
+					<div class="featured-blocks clearfix">
+						{exp:low_variables:pair var="sr_home_pods_{publisher:current_language_code}" limit="3"}
+						<div class="col-md-4 col-sm-4 featured-block">
+							<a href="{link}" class="img-thumbnail">
+								<img src="{image}" alt="{title}">
+								<strong>{title}</strong> <span class="more">{link_title}</span>
+							</a>
+						</div>
+						{/exp:low_variables:pair}
+					</div>
+					<!-- End Featured Blocks --> 
+				</div>
+				
+				
+				
+				<div class="row">
+					<div class="col-md-8 col-sm-12">
+						<!-- <iframe class="col-sm-12" width="1280" height="720" src="//www.youtube.com/embed/wUpY2bqT294" frameborder="0" allowfullscreen></iframe>-->
+						
+						<!-- Events Listing -->
+						<div class="listing events-listing">
+							<header class="listing-header">
+								<h3>{phrase:year_teams}</h3>
+							</header>
+							<section class="listing-cont">
+								<ul>
+									{exp:query sql="
+										SELECT exp_channel_data.entry_id AS EntryID
+										FROM exp_channel_data INNER JOIN exp_channel_titles ON exp_channel_data.entry_id = exp_channel_titles.entry_id
+										WHERE exp_channel_titles.channel_id = '1' AND exp_channel_data.entry_id != '7' AND exp_channel_titles.`status` = 'Members-id5' AND exp_channel_data.field_id_16 <> '' AND exp_channel_data.field_id_85 = 'y'
+										ORDER BY exp_channel_data.field_id_71 DESC LIMIT 5
+									"}
+									{embed="includes/team-listing-element" entryid="{EntryID}"}
+									{/exp:query}
+								</ul>
+								
+							<div class="spacer-30"></div>	
+							</section>
+							<div style="text-align:center"><a href="{path='teams'}" class="btn btn-default btn-lg">{phrase:see_all_teams}</a></div>
+						</div>
+						<div class="spacer-30"></div>
+						
+						
+						<!-- Latest News -->
+						{!--<div class="listing post-listing">
+							<header class="listing-header">
+								<h3>Latest News</h3>
+							</header>
+							<section class="listing-cont">
+								<ul>
+									<li class="item post">
+										<div class="row">
+											<div class="col-md-4"> <a href="assets/#" class="media-box"> <img src="assets/images/blog1.jpg" alt="" class="img-thumbnail"> </a></div>
+											<div class="col-md-8">
+												<div class="post-title">
+													<h2><a href="#">Voluptatum deleniti atque corrupti</a></h2>
+													<span class="meta-data"><i class="fa fa-calendar"></i> on Mar 17, 2014</span>
+												</div>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
+											</div>
+										</div>
+									</li>
+									<li class="item post">
+										<div class="row">
+											<div class="col-md-4"> <a href="assets/blog-post.html" class="media-box"> <img src="assets/images/blog2.jpg" alt="" class="img-thumbnail"> </a></div>
+											<div class="col-md-8">
+												<div class="post-title">
+													<h2><a href="#">Voluptatum deleniti atque corrupti</a></h2>
+													<span class="meta-data"><i class="fa fa-calendar"></i> on Feb 3, 2014</span>
+												</div>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</section>
+						</div>
+						--}
+						
+						
+					</div>
+					<!-- Start Sidebar -->
+					<div class="col-md-4 col-sm-12">
+						{embed="includes/rightbar-video-sponsors"}
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="featured-gallery">
+			<div class="container">
+				{exp:channel:entries channel="the_latest" limit="1"}
+				<div class="row">
+					<div class="col-md-3 col-sm-3">
+						<h4>{phrase:the_latest}</h4>
+						
+						<p>{latest_snippet}</p>
+					</div>
+					{latest_image_gallery}
+					{if row_count < 4}
+					<div class="col-md-3 col-sm-3 post format-image"> <a data-rel="prettyPhoto[Gallery]" class="media-box" href="{image}"> {exp:ce_img:single src="{image}" allow_scale_larger="yes" width="600" height="400" crop="yes" attributes="alt='{title}'"} <span class="zoom" style="width: 230px; height: 153px; line-height: 153px;"><i class="fa fa-search"></i></span></a> </div>
+					{if:else}
+					<a data-rel="prettyPhoto[Gallery]" class="media-box" href="{image}"></a>
+					{/if}
+					{/latest_image_gallery}
+					
+				</div>
+				{/exp:channel:entries}
+			</div>
+		</div>
+	</div>
+	
+	{embed="includes/document-footer" sponsors="on"}
+	
+</div>
+
+{embed="includes/document-modals"}
+
+<!-- Login Modal -->
+<div class="modal fade out" id="Message" tabindex="-1" role="dialog" aria-labelledby="myMessage" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">THANK YOU VERY MUCH!</h4>
+			</div>
+			
+			<div class="modal-body" >
+				<p>Thank you very much for participating with us this year!  We especially want to thank our extraordinary participants, corporate sponsors, donors and voluntees for making Sinai Rally 2015 such a tremendous success!</p>
+				<p class="right">&raquo; <a href="{path='gallery'}">2015 Photo Gallery </a></p>
+				<p class="right">&raquo; <a href="/Rally_Results.pdf">2015 Driver Results </a></p>
+				<p class="right">&raquo; {if publisher:current_language_code == 'en'}<a href="/Rally_Answers_en.pdf">{if:else}<a href="/Rally_Answers_fr.pdf">{/if}Rally Answers</a> </p>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+			
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+{embed="includes/document-footer-jquery"}
+
+<script>
+$(document).ready(function() {
+	$( '.slideshow' ).cycle();
+	/*$('#Message').modal('toggle');*/
+});	
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<div class="row hidden-xs"> 
+	<!-- Start Featured Blocks -->
+	<div class="featured-blocks clearfix">
+		{exp:low_variables:pair var="sr_home_pods_{publisher:current_language_code}" limit="3" dynamic="no"}
+		<div class="col-md-12 col-sm-12 featured-block">
+			<a href="{link}" class="img-thumbnail">
+				<img src="{image}" alt="{title}">
+				<strong>{title}</strong> <span class="more">{link_title}</span>
+			</a>
+		</div>
+		<div class="spacer-20"></div>
+		{/exp:low_variables:pair}
+		
+	</div>
+	<!-- End Featured Blocks --> 
+</div>

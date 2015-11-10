@@ -1,0 +1,54 @@
+<!-- Login Modal -->
+
+
+
+
+<div class="modal fade out" id="Login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">{phrase:popup_title}</h4>
+			</div>
+			{exp:zoo_visitor:login_form id="loginForm" error_handling="inline"}
+            
+			<div class="modal-body" >
+				<p>{phrase:already_a_registered_user_log_in_below}</p>
+				{error:login}
+                <div class="form-group">
+					<label>{phrase:su_email_address}</label>  
+					<input id="username" name="username" type="text" class="form-control" placeholder="{phrase:su_email_address}" />
+				</div>
+				<div class="form-group">
+					<label>{phrase:su_password}</label>
+					<input id="password" class="form-control" name="password" type="password" placeholder="{phrase:su_password}" />
+				</div>
+				<p class="right">&raquo; <a href="{site_url}account/forgot">{phrase:forgot_your_password}</a></p>
+				<p class="right">&raquo; <a href="{site_url}account/signup">{phrase:create_an_account}</a> </p>
+
+			</div>
+			<div class="modal-footer">
+				<input type="submit" class="btn btn-danger" value="{phrase:nav_login}">
+			</div>
+			{/exp:zoo_visitor:login_form}
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- Terms Modal -->
+<div class="modal fade" id="Terms" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">{phrase:su_terms_and_conditions}</h4>
+			</div>
+			{exp:zoo_visitor:login_form return="account/verify"}
+			<div class="modal-body" >
+				{sr_terms_conditions_{publisher:current_language_code}}
+			</div>
+			{/exp:zoo_visitor:login_form}
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

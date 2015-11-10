@@ -1,0 +1,82 @@
+{embed="includes/document-head" title="Order Listing"}
+<link rel="stylesheet" type="text/css" href="/assets/datatables/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="/assets/datatables/css/dataTables.tableTools.css">
+</head>
+
+<body>
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+
+<div style="padding:50px"> 
+	<h1>Sinai Rally CreditCard Orders</h1>
+	<hr />
+	
+	<table id="example" class="display" width="100%" border="0" cellspacing="0" cellpadding="0">
+		
+		<thead>
+			<tr>
+				<td><strong>Order ID</strong></td>
+				<td><strong>Order Date</strong></td>
+				<td><strong>Moneris ID</strong></td>
+				<td><strong>Tax Receipt</strong></td>
+				<td><strong>Amount</strong></td>
+				<td><strong>In support of</strong></td>
+				<td><strong>First Name</strong></td>
+				<td><strong>Last Name</strong></td>
+				<td><strong>Company</strong></td>
+				<td><strong>Address</strong></td>
+				<td><strong>City</strong></td>
+				<td><strong>State/Prov</strong></td>
+				<td><strong>PCode</strong></td>
+				<td><strong>Country</strong></td>
+				<td><strong>Phone</strong></td>
+				<td><strong>Email</strong></td>				
+				<td><strong>Payment Method</strong></td>
+				<td><strong>Tax Receipt</strong></td>
+			</tr>
+		</thead>
+		
+		<tbody>
+		{exp:store:orders limit="2000"}
+		{if payment_method == 'moneris'}
+		<tr>
+			<td>{order_id}</td>
+			<td>{order_date format="%M %d, %Y"}</td>
+			<td>{order_date format="ord-%d%m%y-%G:%i:%s"}</td>
+			<td>{if order_custom3}{order_custom3}{if:else}{billing_first_name} {billing_last_name}{/if}</td>
+			<td>{order_total}</td>
+			<td>{items}{title}{/items}</td>
+			<td>{billing_first_name}</td>
+			<td>{billing_last_name}</td>
+			<td>{order_custom2}</td>
+			<td>{billing_address1}, {billing_address2}</td>
+			<td>{billing_city}</td>
+			<td>{billing_postcode}</td>
+			<td>{billing_state}</td>
+			<td>{billing_country}</td>
+			<td>{billing_phone}</td>
+			<td>{order_email}</td>
+			<td>{payment_method}</td>
+			<td style="text-align:center"><a href="/en/account/tax-receipt/{order_hash}"><i class="fa fa-cloud-download"></i> SR{order_id}</a></td>
+		</tr>
+		{/if}
+		{/exp:store:orders}
+		</tbody>
+		
+	</table>
+	
+</div>
+
+{embed="includes/document-footer-jquery"}
+<script type="text/javascript" language="javascript" src="/assets/datatables/js/jquery.dataTables.js"></script>
+<script type="text/javascript" language="javascript" src="/assets/datatables/js/dataTables.tableTools.js"></script>
+<script type="text/javascript" language="javascript" class="init">
+	$(document).ready(function() {
+		$('#example').dataTable({
+			dom: 'T<"clear">lfrtip'
+		});
+	});
+</script>
+</body>
+</html>

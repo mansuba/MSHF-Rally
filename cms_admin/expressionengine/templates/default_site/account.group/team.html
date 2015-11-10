@@ -1,0 +1,185 @@
+{embed="includes/document-head" title="{phrase:account}"}
+
+</head>
+
+<body>
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+    
+    {exp:channel:entries channel="zoo_visitor" entry_id="{zoo_visitor_id}" status="Members-id5" }
+        {exp:stash:set name="activated"}{activate_team}{/exp:stash:set}
+    {/exp:channel:entries}
+	
+{embed="includes/document-nav" section=""}
+	
+	<!-- Start Nav Backed Header -->
+	<div class="nav-backed-header parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="index.html">{phrase:nav_home}</a></li>
+						<li class="active">{phrase:account}</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Nav Backed Header --> 
+	<!-- Start Page Header -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>{phrase:account_team_details}</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	
+	<!-- Start Content -->
+	<div class="main" role="main">
+		<div id="content" class="content full">
+			<div class="container">
+				<div class="row">
+					{embed="account/menu" section="team"}
+				</div>
+				
+				<div class="spacer-30"></div>
+				
+				{if segment_3=='success'}
+				<div class="alert alert-success alert-dismissable">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <strong>{phrase:success}</strong> {phrase:account_your_changes_have_been_saved}
+				</div>
+				
+				<div class="spacer-30"></div>
+				{/if}
+				
+				<div class="row">
+					<div class="col-xs-12 col-md-12">
+						{exp:channel:form channel="zoo_visitor" entry_id="{zoo_visitor_id}" return="/{publisher:current_language_code}/account/team/success"}
+							<header class="single-post-header clearfix">
+								<h3>{phrase:account_make_sure_to_fill_out_all_fields}</h3>
+							</header>
+                        		<input type="hidden" value='{exp:stash:get name="activated"}' name='activation_chk' id='activation_chk' />
+                            {if '{exp:stash:get name="activated"}' != 'y'}
+							<div class="row post-content" style="background-color:#FFF1F1;">
+								<div class="col-xs-6 col-sm-6">
+                                    <label><i class="fa fa-exclamation-circle"></i>
+ {phrase:activate_my_team}</label><br />
+                                    {field:activate_team}
+								</div>
+							</div>
+                            <div class="spacer-30"></div>
+						   {if:else}
+                                <input type="hidden" value="{activate_team}" name="activate_team" id="activate_team" />
+                            {/if}
+                        
+                        
+							<div class="row post-content">
+								<div class="col-xs-6 col-sm-6">
+									<label>{phrase:account_team_name}: </label>
+                                    {field:team_name}
+								</div>
+							</div>
+                        
+                            <div class="spacer-30"></div>
+							
+							<div class="row post-content">
+								<div class="col-xs-6 col-sm-6">
+									<label>{phrase:account_team_photo}</label>
+									{field:team_photo}
+								</div>
+							</div>
+
+							<div class="spacer-30"></div>
+
+							<div class="row post-content">
+								<div class="col-xs-12 col-sm-12">
+									<label>{phrase:account_about_the_team}</label>
+									{field:team_bio}
+								</div>
+							</div>
+
+							<div class="spacer-30"></div>
+                        
+                            <h4>Team Contact Information</h4>
+                        
+                        <div class="spacer-20"></div>
+                        
+                            <div class="row post-content">
+                                <div class="col-xs-12">
+                                    <label>* {phrase:account_street_address}</label>
+                                    <input type="text" class="form-control" name="account_address" id="account_address" value="{if account_address}{account_address}{/if}" />
+                                </div>
+                            </div>
+                        
+                        <div class="spacer-30"></div>
+
+                            <div class="row post-content">
+                                <div class="col-xs-6 col-sm-6">
+                                    <label>* {phrase:account_city}</label>
+                                    <input type="text" class="form-control" name="account_city" id="account_city" value="{if account_city}{account_city}{/if}" />
+                                </div>
+
+                                <div class="col-xs-6 col-sm-6">
+                                    <label>* {phrase:account_province_state}</label>
+                                    <input type="text" class="form-control" name="account_province_state" id="account_province_state" value="{if account_province_state}{account_province_state}{/if}" />
+                                </div>
+                            </div>
+
+                        <div class="spacer-30"></div>
+                        
+                            <div class="row post-content">
+                                <div class="col-xs-6 col-sm-6">
+                                    <label>* {phrase:account_postal_code}</label>
+                                    <input type="text" class="form-control" name="account_postal_zip_code" id="account_postal_zip_code" value="{if account_postal_zip_code}{account_postal_zip_code}{/if}" />
+                                </div>
+
+                                <div class="col-xs-6 col-sm-6">
+                                    <label>* {phrase:account_country}</label>
+                                    <input type="text" class="form-control" name="account_country" id="account_country" value="{if account_country}{account_country}{/if}" />
+                                </div>
+                            </div>        
+                        <div class="spacer-30"></div>
+
+                            <div class="row post-content">
+
+                                <div class="col-xs-6 col-sm-6">
+                                    <label>* {phrase:account_telephone}</label>
+                                    <input type="text" class="form-control" name="account_phone_number" id="account_phone_number" value="{if account_phone_number}{account_phone_number}{/if}" />
+                                </div>
+                            </div>   
+
+							<div class="spacer-30"></div>
+                        
+							<div class="row post-content">
+								<button type="submit" class="btn btn-danger">{phrase:account_save_changes}</button>
+							</div>
+						{/exp:channel:form}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	{embed="includes/document-footer" sponsors="off"}
+	
+</div>
+
+{embed="includes/document-modals"}
+
+
+{embed="includes/document-footer-jquery"}
+
+<script>
+$(document).ready(function() {
+	$( '.slideshow' ).cycle();
+});	
+</script>
+</body>
+</html>

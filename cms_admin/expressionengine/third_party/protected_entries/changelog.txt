@@ -1,0 +1,14 @@
+1.2
+	Bugfix : on the structure overview page
+	Bugfix : conflicting with other extensions
+
+1.1.1
+	Bugfix : JS error on the Structure page
+
+1.1
+	Added : Select2 on the settings page
+	Added : Structure support
+	Bugfix : where an error whas showing on the settings page.
+
+1.0b
+	- Beta release

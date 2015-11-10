@@ -1,0 +1,61 @@
+<!-- Start Site Header -->
+<header class="site-header">
+	<div class="topbar">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-8">
+					<h1 class="logo"> <a href="{site_url}"><img src="/assets/images/logo.png" alt="Logo"></a> </h1>
+				</div>
+				<div class="col-md-8 col-sm-6 col-xs-4">
+					<ul class="top-navigation hidden-sm hidden-xs">
+						
+						{if logged_in}
+						<li><a href="{path='account/team'}">{phrase:nav_manage_account}</a></li>
+						{if:else}
+						<li><a data-toggle="modal" href="#Login">{phrase:nav_login}</a></li>
+						{/if}
+						{!--<li><a href="{path='contact'}">{phrase:nav_contact}</a></li>--}
+						<li>
+							{exp:publisher:languages show_current="no"}<a rel="alternate" hreflang="{short_name}" href="{translated_url}">{if short_name == 'fr'}Français{if:else}{long_name}{/if}</a>{/exp:publisher:languages}
+						</li>
+						
+						<li style="margin-top:-4px"><a href="{path='donate'}" class="btn btn-danger">{phrase:nav_donate_now}</a></li>
+					</ul>
+					<a href="assets/#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-menu-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="navigation">
+						<ul class="sf-menu">
+							<li><a href="#" {if embed:section == "about"}class="current"{/if}>{phrase:nav_about_us}</a>
+								<ul class="dropdown">
+									{exp:channel:entries channel="about_us" dynamic="no" fixed_order="14|15|16" disable="member_data|pagination|category_fields" publisher_add_translations=“y”}
+									<li><a href="{url_title_path='about-us'}">{title}</a></li>
+									{/exp:channel:entries}
+								</ul>
+							</li>
+							<li><a href="#" {if embed:section == "signup"}class="current"{/if}>{phrase:nav_sign_up}</a>
+								<ul class="dropdown">
+									<li><a href="{path='account/signup'}">{phrase:nav_sign_up}</a></li>
+									<li><a href="{path='fundraising-tools'}">{phrase:nav_fundraising_tools}</a></li>
+								</ul>
+							</li>
+							<li><a href="{path='donate'}" {if embed:section == "donate"}class="current"{/if}>{phrase:nav_donate}</a></li>
+							<li><a href="{path='teams'}" {if embed:section == "teams"}class="current"{/if}>{phrase:nav_teams}</a></li>
+							<li><a href="{path='sponsorship'}" {if embed:section == "sponsorship"}class="current"{/if}>{phrase:nav_sponsorship}</a></li>
+							<li><a href="{path='the-latest'}" {if embed:section == "the-latest"}class="current"{/if}>{phrase:nav_the_latest}</a></li>
+							<li><a href="{path='contact'}" {if embed:section == "contact"}class="current"{/if}>{phrase:nav_contact}</a></li>
+							{!-- <li><a href="{path='gallery'}" {if embed:section == "gallery"}class="current"{/if}>{phrase:nav_gallery}</a></li>--}
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- End Site Header -->

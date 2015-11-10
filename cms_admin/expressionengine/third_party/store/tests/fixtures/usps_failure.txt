@@ -1,0 +1,8 @@
+HTTP/1.1 200 OK
+Connection: close
+Date: Fri, 05 Jul 2013 14:40:27 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+
+<?xml version="1.0"?>
+<Error><Number>-2147219100</Number><Source>Rate_Respond.;clsRateV4.UnpackRateNode;SOLServerRates.RateV4_Respond</Source><Description>Missing value for ZipOrigination.</Description><HelpFile></HelpFile><HelpContext>1000440</HelpContext></Error>

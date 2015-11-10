@@ -1,0 +1,333 @@
+/* This is to fix a pretty gross bug in EE.
+The member account block on the right of the CP page
+when expanded will cause the Publisher toolbar to 
+match the height of the sidebar. */
+#mainContent { float: left !important; }
+
+#publish_submit_buttons { display: none; }
+
+ul.publisher-pt-pill {
+    margin: 7px 0 0 3px;
+    padding: 0;
+    float: left;
+    color: #000 !important; /* Thank NSM Override for this one. */
+}
+
+.publisher-bar-inner h4 {
+    float: left;
+}
+
+#view_language {
+    margin: 7px 0 0 3px;
+}
+
+#mainContent #publishForm { padding-top: 0; }
+.publisher-bar {
+    z-index: 999;
+    margin: 0;
+    background: rgba(255,255,255,0.9);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 18px;
+    /*margin-top: 9px;*/
+    -moz-box-shadow: rgba(0, 0, 0, 0.05) 0 3px 5px 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0 3px 5px 0;
+    -o-box-shadow: rgba(0, 0, 0, 0.05) 0 3px 5px 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 3px 5px 0;
+}
+.publisher-bar-inner {
+    position: relative;
+    padding: 4px 10px 0 10px;
+    background: url(../images/bar_bg.png) 0 0 repeat-x;
+}
+
+.templateTable .publisher-bar {
+    background: #fff;
+}
+
+.publisher-view-language {
+    margin: 8px 0 0 5px;
+}
+
+.publisher-bar .lang-selector img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.publisher-bar.has_draft .publisher-bar-inner {
+    background-image: linear-gradient(top, rgb(232,214,135) 10%, rgb(252,237,169) 30%, rgb(255,255,255) 66%);
+    background-image: -o-linear-gradient(top, rgb(232,214,135) 10%, rgb(252,237,169) 30%, rgb(255,255,255) 66%);
+    background-image: -moz-linear-gradient(top, rgb(232,214,135) 10%, rgb(252,237,169) 30%, rgb(255,255,255) 66%);
+    background-image: -webkit-linear-gradient(top, rgb(232,214,135) 10%, rgb(252,237,169) 30%, rgb(255,255,255) 66%);
+    background-image: -ms-linear-gradient(top, rgb(232,214,135) 10%, rgb(252,237,169) 30%, rgb(255,255,255) 66%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.1, rgb(232,214,135)),
+        color-stop(0.3, rgb(252,237,169)),
+        color-stop(0.66, rgb(255,255,255))
+    );
+}
+
+.publisher-bar.draft .publisher-bar-inner,
+.publisher-bar.has_draft.draft .publisher-bar-inner {
+    background-image: linear-gradient(top, rgb(232,214,135) 10%, rgb(252,237,169) 58%);
+    background-image: -o-linear-gradient(top, rgb(232,214,135) 10%, rgb(252,237,169) 58%);
+    background-image: -moz-linear-gradient(top, rgb(232,214,135) 10%, rgb(252,237,169) 58%);
+    background-image: -webkit-linear-gradient(top, rgb(232,214,135) 10%, rgb(252,237,169) 58%);
+    background-image: -ms-linear-gradient(top, rgb(232,214,135) 10%, rgb(252,237,169) 58%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.1, rgb(232,214,135)),
+        color-stop(0.58, rgb(252,237,169))
+    );
+}
+
+.publisher-bar.open .publisher-bar-inner {
+    /*background-color: green;*/
+}
+
+.publisher-bar .fallback-message {
+    clear: left;
+    padding: 10px;
+    margin: 0 -10px;
+    color: #666;
+    border-top: 1px dotted rgba(0, 0, 0, 0.2);
+}
+
+.publisher-bar.fixed { position: fixed; top: 0; }
+
+#mainContent .publisher-bar h2,
+#mainContent #publishForm .publisher-bar h2 {
+    position: relative;
+    display: block;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #c75a02;
+}
+
+.publisher-bar h2 span {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: -2px;
+    left: 0;
+}
+
+.publisher-bar .submit.delete-draft,
+.publisher-bar .submit.delete-translation {
+    background-color: grey !important;
+    background-image: none;
+}
+
+.publisher-bar .submit {
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px
+}
+
+.publisher-bar h4 {
+    font-size: 12px !important; /* Thank NSM Override for this one too */
+    margin: 0 !important; /* Thank NSM Override for this one as well... seeing a pattern here? */
+    display: inline-block;
+    background: none;
+    padding: 0;
+    height: 34px;
+    line-height: 34px;
+}
+
+.publisher-bar .lang-heading,
+.publisher-bar .lang-selector,
+.publisher-bar .status-selector,
+.publisher-bar .flag-selector {
+    float: left;
+    min-width: 120px;
+    margin-right: 20px;
+}
+.publisher-bar .lang-selector {
+    min-width: 160px;
+    margin-left: 6px;
+}
+
+.publisher-bar .flag-selector {
+    padding-top: 10px;
+}
+
+.publisher-bar .translation-status {
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.publisher-bar .fallback-message-description {
+    clear: left;
+    padding-top: 10px;
+}
+
+.publisher-bar .status-selector select {
+    margin: 8px 0 0 4px;
+}
+
+div.tooltip {
+    width: 200px;
+    padding: 1em;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+    border: 2px solid #bbb;
+    
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    
+    background: #F5F5F5;
+    background: -moz-linear-gradient(top, #F5F5F5 0%, #D1D1D1 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F5F5F5), color-stop(100%,#D1D1D1));
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#F5F5F5", endColorstr="#D1D1D1",GradientType=0 );
+}
+
+
+.publisher-indicator {
+    clear: left;
+    padding: 6px;
+    font-size: 1.1em;
+    color: #e40000;
+    font-weight: bold;
+}
+
+.publisher-indicator-flag {
+    display: none;
+    position: absolute;
+    width: 31px;
+    height: 38px;
+    top: -4px;
+    left: 17px;
+    text-align: center;
+
+    /*border-top: 1px solid rgba(255, 255, 255, 0.3);*/
+    /*background-color: #e40000;*/
+    background: url(../images/notice_bg.png);
+
+    /*-webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    border-top-left-radius: 3px;*/
+
+/*    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;*/
+
+/*    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);*/
+
+/*    background-image: linear-gradient(top, rgb(204,8,8) 5%, rgb(228,0,0) 62%);
+    background-image: -o-linear-gradient(top, rgb(204,8,8) 5%, rgb(228,0,0) 62%);
+    background-image: -moz-linear-gradient(top, rgb(204,8,8) 5%, rgb(228,0,0) 62%);
+    background-image: -webkit-linear-gradient(top, rgb(204,8,8) 5%, rgb(228,0,0) 62%);
+    background-image: -ms-linear-gradient(top, rgb(204,8,8) 5%, rgb(228,0,0) 62%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.05, rgb(204,8,8)),
+        color-stop(0.62, rgb(228,0,0))
+    );*/
+}
+
+.publisher-indicator-msg {
+    /*padding-left: 36px;*/
+}
+
+.publisher-indicator-flag span {
+    margin-top: 15px;
+    display: inline-block;
+    width: 15px;
+    height: 12px;
+    background: url("../../../cp_themes/default/images/alert.png") 0 0 no-repeat;
+}
+
+div.publish_field.publish_matrix {
+    overflow-x: visible !important;
+}
+
+.publisher-diff {
+    position: relative;
+}
+
+.publisher-diff-content {
+    margin: 0 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #b3b3b3;
+    border-left: 10px solid #b3b3b3;
+    font-family: consolas, verdana, sans-serif;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    display: none;
+}
+
+.publisher-diff-toggle {
+    width: 18px;
+    height: 20px;
+    background: url(../images/icon_diff.gif) 50% 50% no-repeat;
+    position: absolute;
+    top: 0; 
+    left: -22px;
+    cursor: pointer;
+}
+
+.publisher-diff del,
+.diff-html-removed {
+    text-decoration: line-through;
+    color: red;
+}
+
+.publisher-diff ins,
+.diff-html-added {
+    text-decoration: none;
+    color: green;
+}
+
+.publisher-deny-approval-section {
+    text-align: center;
+}
+
+.publisher-deny-approval-section section {
+    padding: 100px 0;
+}
+
+.publisher-hidden {
+    display: none;
+}
+
+.publisher-phrase-description {
+    padding: 8px;
+    margin: 8px;
+    margin-top: -10px;
+    background-color: #FAF9D7;
+    border: #F0EEBD 1px solid;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+.ajax-row.inactive {
+    /*opacity: 0.3;*/
+}
+

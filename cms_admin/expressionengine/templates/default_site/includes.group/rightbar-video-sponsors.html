@@ -1,0 +1,28 @@
+<div class="listing sermons-listing">
+	<section>
+		<ul>
+			<li class="item sermon featured-sermon"> 
+				<h4>{phrase:sidebar_video_title}</h4>
+				<div class="featured-sermon-video">
+					{sr_video_embed}
+				</div>
+				<hr />
+				<div>
+					<h4>{phrase:sidebar_sponsors_title}</h4>
+					<div class="slideshow" 
+						data-cycle-fx='fade'
+						data-cycle-timeout='3000'
+						data-cycle-carousel-visible='6'
+						data-cycle-carousel-fluid='true'
+						data-cycle-auto-height='600:454'
+						data-cycle-slides="div"
+					    >
+						{exp:low_variables:pair var="sr_partner_sponsors"}
+						<div class="col-xs-12"><a class="sponsors" href="{link}" target="_blank"><img src="{image}" /></a></div>
+						{/exp:low_variables:pair}
+					</div>
+				</div>				
+			</li>
+		</ul>
+	</section>
+</div> 

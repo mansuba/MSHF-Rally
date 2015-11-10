@@ -1,0 +1,348 @@
+{embed="includes/document-head" title="{phrase:account}"}
+
+</head>
+
+<body>
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+	
+{embed="includes/document-nav" section=""}
+	
+	<!-- Start Nav Backed Header -->
+	<div class="nav-backed-header parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="index.html">{phrase:nav_home}</a></li>
+						<li class="active">{phrase:account}</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Nav Backed Header --> 
+	<!-- Start Page Header -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>{phrase:account_navigator_details}</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	
+	<!-- Start Content -->
+	<div class="main" role="main">
+		<div id="content" class="content full">
+			<div class="container">
+				<div class="row">
+					{embed="account/menu" section="navigator"}
+				</div>
+				
+				<div class="spacer-30"></div>
+				
+				{if segment_3=='success'}
+				<div class="alert alert-success alert-dismissable">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <strong>{phrase:success}</strong> {phrase:account_your_changes_have_been_saved}
+				</div>
+				
+				<div class="spacer-30"></div>
+				{/if}
+				
+				<div class="row">
+					<div class="col-xs-12 col-md-12">
+						{exp:zoo_visitor:update_form return="/{publisher:current_language_code}/account/navigator/success"
+                            rules:navigator_first_name="required"
+                            rules:navigator_last_name="required"
+                            rules:navigator_city="required"
+                            rules:navigator_street_address="required"
+                            rules:navigator_province_state="required"
+                            rules:navigator_country="required"
+                            rules:navigator_postal_zip_code="required"
+                            rules:navigator_email="required"
+                        
+                        
+                        
+                        }
+							<header class="single-post-header clearfix">
+								<h3>{phrase:account_make_sure_to_fill_out_all_fields}</h3>
+							</header>
+							
+							<div class="hidden">{navigator_title}{navigator_dobd}{navigator_dobm}{navigator_doby}{navigator_province_state}{navigator_this_is_my}{navigator_country}</div>
+							
+							<div class="row post-content">
+								<div class="col-xs-12 col-sm-12">
+									<label>{phrase:account_navigator_profile_image}</label>
+									{field:navigator_image}
+								</div>
+							</div>
+							
+							<div class="spacer-20"></div>
+							
+							<div class="row form-inline post-content">
+								<div class="col-xs-12 col-sm-12" id="">
+									
+									<label>{phrase:account_title}</label>
+									<div class="radio" style="padding:0 10px 0 20px">
+									  <label>
+									    <input type="radio" name="navigator_title" id="navigator_title" value="Mr." {if navigator_title == "Mr."}checked{/if}>
+									    {phrase:account_mr}
+									  </label>
+									</div>
+									<div class="radio" style="padding:0 10px">
+									  <label>
+									    <input type="radio" name="navigator_title" id="navigator_title" value="Mrs." {if navigator_title == "Mrs."}checked{/if}>
+									    {phrase:account_mrs}
+									  </label>
+									</div>
+									<div class="radio" style="padding:0 10px">
+									  <label>
+									    <input type="radio" name="navigator_title" id="navigator_title" value="Ms." {if navigator_title == "Ms."}checked{/if}>
+									    {phrase:account_ms}
+									  </label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="spacer-20"></div>
+							
+							
+							<div class="row post-content">
+								<div class="col-xs-12 col-sm-6">
+									<label>{phrase:account_first_name}</label>
+									<input type="text" class="form-control" name="navigator_first_name" id="navigator_first_name" value="{if navigator_first_name}{navigator_first_name}{/if}">
+								</div>
+								<div class="col-xs-12 col-sm-6">
+									<label>{phrase:account_last_name}</label>
+									<input type="text" class="form-control" name="navigator_last_name" id="navigator_last_name" value="{if navigator_last_name}{navigator_last_name}{/if}">
+								</div>
+							</div>
+
+							
+							<div class="row post-content">
+								<div class="col-xs-12 col-sm-3">
+									<label>Birth Day</label>
+									<select class="form-control" name="navigator_dobd" id="navigator_dobd">
+									{exp:for_loop start="1" end="31" increment="1" pad_zero="2"}
+										<option {if navigator_dobd == "{index}"}selected="selected"{/if}>{index}</option>
+									{/exp:for_loop}
+									</select>
+								</div>
+								<div class="col-xs-12 col-sm-3">
+									<label>{phrase:account_birth_day}</label>
+									<select class="form-control" name="navigator_dobm" id="navigator_dobm">
+										<option value="01" {if navigator_dobm == "01"}selected="selected"{/if}>{phrase:account_january}</option>
+										<option value="02" {if navigator_dobm == "02"}selected="selected"{/if}>{phrase:account_february}</option>
+										<option value="03" {if navigator_dobm == "03"}selected="selected"{/if}>{phrase:account_march}</option>
+										<option value="04" {if navigator_dobm == "04"}selected="selected"{/if}>{phrase:account_april}</option>
+										<option value="05" {if navigator_dobm == "05"}selected="selected"{/if}>{phrase:account_may}</option>
+										<option value="06" {if navigator_dobm == "06"}selected="selected"{/if}>{phrase:account_june}</option>
+										<option value="07" {if navigator_dobm == "07"}selected="selected"{/if}>{phrase:account_july}</option>
+										<option value="08" {if navigator_dobm == "08"}selected="selected"{/if}>{phrase:account_august}</option>
+										<option value="09" {if navigator_dobm == "09"}selected="selected"{/if}>{phrase:account_september}</option>
+										<option value="10" {if navigator_dobm == "10"}selected="selected"{/if}>{phrase:account_october}</option>
+										<option value="11" {if navigator_dobm == "11"}selected="selected"{/if}>{phrase:account_november}</option>
+										<option value="12" {if navigator_dobm == "12"}selected="selected"{/if}>{phrase:account_december}</option>
+									</select>
+								</div>
+								<div class="col-xs-12 col-sm-4">
+									<label>{phrase:account_birth_year}</label>
+									<select class="form-control" name="navigator_doby" id="navigator_doby">
+									{exp:for_loop start="1900" end="2014" increment="1"}
+										<option {if navigator_doby == "{index}"}selected="selected"{/if}>{index}</option>
+									{/exp:for_loop}
+									</select>
+								</div>
+							</div>
+
+							
+							<div class="row post-content">
+								<div class="col-xs-12 col-sm-6">
+									<label>{phrase:account_organization}</label>
+									<input type="text" class="form-control" name="navigator_organization" id="navigator_organization" value="{if navigator_first_name}{navigator_first_name}{/if}">
+								</div>
+							</div>
+							
+							<div class="spacer-20"></div>
+							
+							<div class="row form-inline post-content">
+								<div class="col-xs-12 col-sm-12">
+									
+									<label>{phrase:account_this_is_my}</label>
+									<div class="radio" style="padding:0 20px">
+									  <label>
+									    <input type="radio" name="navigator_this_is_my" id="navigator_this_is_my" value="Home Address" {if navigator_this_is_my == "Home Address"}checked{/if}>
+									    {phrase:account_home_address}
+									  </label>
+									</div>
+									<div class="radio">
+									  <label>
+									    <input type="radio" name="navigator_this_is_my" id="navigator_this_is_my" value="Business Address" {if navigator_this_is_my == "Business Address"}checked{/if}>
+									    {phrase:account_business_address}
+									  </label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="spacer-20"></div>
+							
+							<div class="row">
+								<div class="col-xs-12 col-sm-6">
+									<label>{phrase:account_street_address}</label>
+									<input type="text" class="form-control" name="navigator_street_address" id="navigator_street_address" value="{if navigator_street_address}{navigator_street_address}{/if}">
+								</div>
+								<div class="col-xs-12 col-sm-6">
+									<label>{phrase:account_street_address} 2</label>
+									<input type="text" class="form-control" name="navigator_street_address_2" id="navigator_street_address_2" value="{if navigator_street_address_2}{navigator_street_address_2}{/if}">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 col-sm-4">
+									<label>{phrase:account_city}</label>
+									<input type="text" class="form-control" name="navigator_city" id="navigator_city" value="{if navigator_city}{navigator_city}{/if}">
+								</div>
+								<div class="col-xs-12 col-sm-4">
+									<label>{phrase:account_province_state}</label>
+									<select name="navigator_province_state" id="navigator_province_state" class="form-control">
+										<option value="AL" {if navigator_province_state == "AL"}selected="selected"{/if}>Alabama</option>
+										<option value="AK" {if navigator_province_state == "AK"}selected="selected"{/if}>Alaska</option>
+										<option value="AZ" {if navigator_province_state == "AZ"}selected="selected"{/if}>Arizona</option>
+										<option value="AR" {if navigator_province_state == "AR"}selected="selected"{/if}>Arkansas</option>
+										<option value="CA" {if navigator_province_state == "CA"}selected="selected"{/if}>California</option>
+										<option value="CO" {if navigator_province_state == "CO"}selected="selected"{/if}>Colorado</option>
+										<option value="CT" {if navigator_province_state == "CT"}selected="selected"{/if}>Connecticut</option>
+										<option value="DE" {if navigator_province_state == "DE"}selected="selected"{/if}>Delaware</option>
+										<option value="DC" {if navigator_province_state == "DC"}selected="selected"{/if}>District of Columbia</option>
+										<option value="FL" {if navigator_province_state == "FL"}selected="selected"{/if}>Florida</option>
+										<option value="GA" {if navigator_province_state == "GA"}selected="selected"{/if}>Georgia</option>
+										<option value="HI" {if navigator_province_state == "HI"}selected="selected"{/if}>Hawaii</option>
+										<option value="ID" {if navigator_province_state == "ID"}selected="selected"{/if}>Idaho</option>
+										<option value="IL" {if navigator_province_state == "IL"}selected="selected"{/if}>Illinois</option>
+										<option value="IN" {if navigator_province_state == "IN"}selected="selected"{/if}>Indiana</option>
+										<option value="IA" {if navigator_province_state == "IA"}selected="selected"{/if}>Iowa</option>
+										<option value="KS" {if navigator_province_state == "KS"}selected="selected"{/if}>Kansas</option>
+										<option value="KY" {if navigator_province_state == "KY"}selected="selected"{/if}>Kentucky</option>
+										<option value="LA" {if navigator_province_state == "LA"}selected="selected"{/if}>Louisiana</option>
+										<option value="ME" {if navigator_province_state == "ME"}selected="selected"{/if}>Maine</option>
+										<option value="MD" {if navigator_province_state == "MD"}selected="selected"{/if}>Maryland</option>
+										<option value="MA" {if navigator_province_state == "MA"}selected="selected"{/if}>Massachusetts</option>
+										<option value="MI" {if navigator_province_state == "MI"}selected="selected"{/if}>Michigan</option>
+										<option value="MN" {if navigator_province_state == "MN"}selected="selected"{/if}>Minnesota</option>
+										<option value="MS" {if navigator_province_state == "MS"}selected="selected"{/if}>Mississippi</option>
+										<option value="MO" {if navigator_province_state == "MO"}selected="selected"{/if}>Missouri</option>
+										<option value="MT" {if navigator_province_state == "MT"}selected="selected"{/if}>Montana</option>
+										<option value="NE" {if navigator_province_state == "NE"}selected="selected"{/if}>Nebraska</option>
+										<option value="NV" {if navigator_province_state == "NV"}selected="selected"{/if}>Nevada</option>
+										<option value="NH" {if navigator_province_state == "NH"}selected="selected"{/if}>New Hampshire</option>
+										<option value="NJ" {if navigator_province_state == "NJ"}selected="selected"{/if}>New Jersey</option>
+										<option value="NM" {if navigator_province_state == "NM"}selected="selected"{/if}>New Mexico</option>
+										<option value="NY" {if navigator_province_state == "NY"}selected="selected"{/if}>New York</option>
+										<option value="NC" {if navigator_province_state == "NC"}selected="selected"{/if}>North Carolina</option>
+										<option value="ND" {if navigator_province_state == "ND"}selected="selected"{/if}>North Dakota</option>
+										<option value="OH" {if navigator_province_state == "OH"}selected="selected"{/if}>Ohio</option>
+										<option value="OK" {if navigator_province_state == "OK"}selected="selected"{/if}>Oklahoma</option>
+										<option value="OR" {if navigator_province_state == "OR"}selected="selected"{/if}>Oregon</option>
+										<option value="PA" {if navigator_province_state == "PA"}selected="selected"{/if}>Pennsylvania</option>
+										<option value="RI" {if navigator_province_state == "RI"}selected="selected"{/if}>Rhode Island</option>
+										<option value="SC" {if navigator_province_state == "SC"}selected="selected"{/if}>South Carolina</option>
+										<option value="SD" {if navigator_province_state == "SD"}selected="selected"{/if}>South Dakota</option>
+										<option value="TN" {if navigator_province_state == "TN"}selected="selected"{/if}>Tennessee</option>
+										<option value="TX" {if navigator_province_state == "TX"}selected="selected"{/if}>Texas</option>
+										<option value="UT" {if navigator_province_state == "UT"}selected="selected"{/if}>Utah</option>
+										<option value="VT" {if navigator_province_state == "VT"}selected="selected"{/if}>Vermont</option>
+										<option value="VA" {if navigator_province_state == "VA"}selected="selected"{/if}>Virginia</option>
+										<option value="WA" {if navigator_province_state == "WA"}selected="selected"{/if}>Washington</option>
+										<option value="WV" {if navigator_province_state == "WV"}selected="selected"{/if}>West Virginia</option>
+										<option value="WI" {if navigator_province_state == "WI"}selected="selected"{/if}>Wisconsin</option>
+										<option value="WY" {if navigator_province_state == "WY"}selected="selected"{/if}>Wyoming</option>
+										<option value="AB" {if navigator_province_state == "AB"}selected="selected"{/if}>Alberta</option>
+										<option value="BC" {if navigator_province_state == "BC"}selected="selected"{/if}>British Columbia</option>
+										<option value="MB" {if navigator_province_state == "MB"}selected="selected"{/if}>Manitoba</option>
+										<option value="NB" {if navigator_province_state == "NB"}selected="selected"{/if}>New Brunswick</option>
+										<option value="NL" {if navigator_province_state == "NL"}selected="selected"{/if}>Newfoundland and Laborador</option>
+										<option value="NT" {if navigator_province_state == "NT"}selected="selected"{/if}>Northwest Territories</option>
+										<option value="NS" {if navigator_province_state == "NS"}selected="selected"{/if}>Nova Scotia</option>
+										<option value="NU" {if navigator_province_state == "NU"}selected="selected"{/if}>Nunavut</option>
+										<option value="ON" {if navigator_province_state == "ON"}selected="selected"{/if}>Ontario</option>
+										<option value="PE" {if navigator_province_state == "PE"}selected="selected"{/if}>Prince Edward Island</option>
+										<option value="QC" {if navigator_province_state == "QC"}selected="selected"{/if}>Quebec</option>
+										<option value="SK" {if navigator_province_state == "SK"}selected="selected"{/if}>Saskatchewan</option>
+										<option value="YT" {if navigator_province_state == "YT"}selected="selected"{/if}>Yukon</option>
+									</select>
+								</div>
+								<div class="col-xs-12 col-sm-4">
+									<label>{phrase:account_province_state_other}</label>
+									<input type="text" class="form-control" name="navigator_province_state_other" id="navigator_province_state_other" value="{if navigator_province_state_other}{navigator_province_state_other}{/if}">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-12 col-sm-6">
+									<label>{phrase:account_country}</label>
+									<select name="navigator_country" id="navigator_country" class="form-control">
+										<option value="Canada" {if navigator_country == "Canada"}selected="selected"{/if}>Canada</option>
+										<option value="United States" {if navigator_country == "United States"}selected="selected"{/if}>United States</option>
+									</select>
+								</div>
+								<div class="col-xs-12 col-sm-6">
+									<label>{phrase:account_postal_code}</label>
+									<input type="text" class="form-control" name="navigator_postal_zip_code" id="navigator_postal_zip_code" value="{if navigator_postal_zip_code}{navigator_postal_zip_code}{/if}">
+								</div>
+							</div>
+							
+
+							
+							<div class="row post-content">
+								<div class="col-xs-12 col-sm-4">
+									<label>{phrase:account_home_telephone}</label>
+									<input type="text" class="form-control" name="navigator_home_telephone" id="navigator_home_telephone" value="{if navigator_home_telephone}{navigator_home_telephone}{/if}">
+								</div>
+								<div class="col-xs-12 col-sm-4">
+									<label>{phrase:account_work_telephone}</label>
+									<input type="text" class="form-control" name="navigator_work_telephone" id="navigator_work_telephone" value="{if navigator_work_telephone}{navigator_work_telephone}{/if}">
+								</div>
+								<div class="col-xs-12 col-sm-4">
+									<label>{phrase:account_cell}</label>
+									<input type="text" class="form-control" name="navigator_cell_telephone" id="navigator_cell_telephone" value="{if navigator_cell_telephone}{navigator_cell_telephone}{/if}">
+								</div>
+							</div>
+							
+							<div class="row post-content">
+								<div class="col-xs-12 col-sm-6">
+									<label>{phrase:account_email_address}</label>
+									<input type="text" class="form-control" name="navigator_email_address" id="navigator_email_address" value="{if navigator_email_address}{navigator_email_address}{/if}">
+								</div>
+							</div>
+							
+							<div class="row post-content">
+								<button type="submit" class="btn btn-danger">{phrase:account_save_changes}</button>
+							</div>
+						{/exp:zoo_visitor:update_form}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	{embed="includes/document-footer" sponsors="off"}
+	
+</div>
+
+{embed="includes/document-modals"}
+
+
+{embed="includes/document-footer-jquery"}
+
+<script>
+$(document).ready(function() {
+	$( '.slideshow' ).cycle();
+});	
+</script>
+</body>
+</html>

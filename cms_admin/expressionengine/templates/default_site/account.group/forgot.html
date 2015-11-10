@@ -1,0 +1,112 @@
+{embed="includes/document-head" title="{phrase:account} - {phrase:forgot_your_password}"}
+
+</head>
+
+<body>
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+	
+{embed="includes/document-nav" section="home"}
+	
+	<!-- Start Nav Backed Header -->
+	<div class="nav-backed-header parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="index.html">{phrase:nav_home}</a></li>
+						<li class="active">{phrase:account}</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Nav Backed Header --> 
+	<!-- Start Page Header -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>{phrase:account} - {phrase:forgot_your_password}</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	
+	<!-- Start Content -->
+	<div class="main" role="main">
+		<div id="content" class="content full">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-8">
+						
+						{exp:zoo_visitor:forgot_password error_handling="inline" reset_url="account/reset-forgot-password" }
+
+							{if password_sent}
+								<div class="alert alert-success alert-dismissable">
+								  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								  <strong>{phrase:success}</strong> {phrase:password_reset_confirmation_msg}
+								</div>
+
+								<div class="spacer-30"></div>
+							{/if}
+
+							<header class="single-post-header clearfix">
+								<h4 class="post-title">{phrase:account} - {phrase:forgot_your_password}</h4>
+							</header>
+						
+							<div class="spacer-20"></div>
+							
+							<div class="row">
+								<div class="col-xs-12 col-sm-8">
+									<p>{phrase:enter_your_email_address_in_the_form_below}</p>
+									<label>{phrase:su_email_address}</label>
+									<input type="text" class="form-control" name="email" id="email" placeholder="{phrase:su_email_address}">
+								</div>
+							</div>
+						
+							<div class="spacer-20"></div>
+						
+							<div class="post-content">
+								<button type="submit" class="btn btn-danger btn-lg">{phrase:reset_your_password}</button>
+							</div>
+							
+						{/exp:zoo_visitor:forgot_password}
+						
+					</div>
+					
+					
+					
+					<div class="col-xs-12 col-md-4 "  style="padding-top:40px">
+					
+						{embed="includes/rightbar-pods"}
+						
+					</div>
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	{embed="includes/document-footer"}
+	
+</div>
+
+{embed="includes/document-modals"}
+
+
+{embed="includes/document-footer-jquery"}
+
+<script>
+$(document).ready(function() {
+	$( '.slideshow' ).cycle();
+});	
+</script>
+</body>
+</html>

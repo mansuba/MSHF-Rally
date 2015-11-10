@@ -1,0 +1,114 @@
+
+{embed="includes/document-head" title="{phrase:nav_contact}"}
+
+</head>
+
+<body>
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+	
+{embed="includes/document-nav" section="contact"}
+	
+	<!-- Start Nav Backed Header -->
+	<div class="nav-backed-header parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="{site_url}">{phrase:nav_home}</a></li>
+						<li class="active">{phrase:nav_contact}</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Nav Backed Header --> 
+	<!-- Start Page Header -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>{phrase:nav_contact}</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	
+	<!-- Start Content -->
+	<div class="main" role="main">
+		<div id="content" class="content full">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<header class="single-post-header clearfix">
+							<h2 class="post-title">{phrase:rally_start_location}</h2>
+						</header>
+						
+						<div class="post-content">
+							<div id="gmap">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2797.800538136971!2d-73.6573641!3d45.473821799999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9176c6b8d1fb5%3A0xb1da838297834047!2s5690+Boulevard+Cavendish!5e0!3m2!1sen!2s!4v1400091199762&language={publisher:current_language_code}"></iframe>
+							</div>
+							<div class="row">
+								{exp:email:contact_form user_recipients="no" recipients="info@sinairally.org" return="http://sinairallytest.com/{publisher:current_language_code}/contact|Return to the Home Page" charset="utf-8"}
+									<div class="col-md-6 margin-15">
+										<div class="form-group">
+											<input type="text" id="name" name="name"  class="form-control input-lg" placeholder="{phrase:contact_name}*">
+										</div>
+										<div class="form-group">
+											<input type="email" id="from" name="from"  class="form-control input-lg" placeholder="{phrase:contact_email}*">
+										</div>
+										<div class="form-group">
+											<input type="text" id="subject" name="subject" class="form-control input-lg" placeholder="{phrase:contact_subject}*">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<textarea cols="6" rows="7" id="message" name="message" class="form-control input-lg" placeholder="{phrase:contact_message}"></textarea>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<input id="submit" name="submit" type="submit" class="btn btn-primary btn-lg pull-right" value="{phrase:contact_submit_now}">
+									</div>
+								{/exp:email:contact_form}
+								<div class="clearfix"></div>
+								
+							</div>
+						</div>
+					</div>
+
+					<!-- Start Sidebar -->
+					<div class="col-md-4 col-sm-12 sidebar">
+						<div class="widget-upcoming-events widget">
+							<div class="sidebar-widget-title">
+								<h3>Contact Info</h3>
+							</div>
+							{phrase:contact_info}
+						</div>
+						{embed="includes/rightbar-video-sponsors"}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	{embed="includes/document-footer" sponsors="on"}
+	
+</div>
+
+{embed="includes/document-modals"}
+
+
+{embed="includes/document-footer-jquery"}
+
+<script>
+$(document).ready(function() {
+	$( '.slideshow' ).cycle();
+});	
+</script>
+</body>
+</html>

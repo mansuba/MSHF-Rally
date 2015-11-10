@@ -1,0 +1,21 @@
+{exp:channel:entries channel="zoo_visitor" entry_id="{embed:entryid}" limit="1" dynamic="no" status="Members-id5"}
+<li class="item event-item">
+	<div class="event-detail">
+		<h4><a href="{url_title_path='team'}">{team_name} <br /><small>{driver_first_name} {driver_last_name} {if navigator_first_name} | {navigator_first_name} {navigator_last_name}{/if}</small></a></h4>
+		<span class="event-car meta-data">{car_year} {car_make} {car_model}</span>
+	</div>
+	<div class="event-raised">
+		<div class="progress-label"> <span>{if corporate_team == 'y'}{phrase:corporate_sponsored_team}{if:else}{exp:donation_goal:total_collected entry_id="{entry_id}" language_code="{publisher:current_language_code}"} {phrase:raised}{/if}</span> </div>
+		<div class="progress" style="height:10px; margin-bottom:0">
+			{if corporate_team == 'y'}
+			<div class="progress-bar progress-bar-primary" data-appear-progress-animation='100%' ></div>
+			{if:else}
+			<div class="progress-bar progress-bar-primary" data-appear-progress-animation='{exp:donation_goal:percentage entry_id="{entry_id}" field_id="68"}%' ></div>
+			{/if}
+		</div>
+	</div>
+	<div class="to-event-url">
+		<div><a href="{url_title_path='team'}" class="btn btn-default btn-sm">{phrase:details}</a> <a href="{url_title_path='team'}" class="btn btn-danger btn-sm">{phrase:nav_donate}</a></div>
+	</div>
+</li>
+{/exp:channel:entries}

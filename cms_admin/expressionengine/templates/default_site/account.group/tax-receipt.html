@@ -1,0 +1,27 @@
+{exp:pdf_press:parse_pdf attachment="1"}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- Basic Page Needs
+  ================================================== -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{embed:title} - Sinai Rally / Rallye Sinai</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="http://www.signatureweb.ca/">
+<link href="{site_url}assets/css/pdf.css" rel="stylesheet" media="pdf">
+<style type="text/css">
+body,td,th {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:12px;
+}
+</style>
+</head>
+
+<body>
+{embed="account/tax-receipt-details" id="{segment_3}"}
+
+</body>
+</html>
+{/exp:pdf_press:parse_pdf}

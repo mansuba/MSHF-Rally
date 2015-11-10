@@ -1,0 +1,258 @@
+{exp:zoo_visitor:details url_title="{segment_2}" dynamic="no"}
+{embed="includes/document-head" title="{phrase:about_the_team} : {team_name}"}
+
+</head>
+
+<body>
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+	
+{embed="includes/document-nav" section="team"}
+	
+	<!-- Start Nav Backed Header -->
+	<div class="nav-backed-header parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="{path='/'}">{phrase:nav_home}</a></li>
+						<li><a href="{path='teams/'}">{phrase:nav_teams}</a></li>
+						<li class="active">{team_name}</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Nav Backed Header -->
+	<!-- Start Page Header -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>{team_name}</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	
+	<!-- Start Content -->
+	<div class="main" role="main">
+		<div id="content" class="content full">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<header class="single-post-header clearfix">
+							<h2 class="post-title">{phrase:about_the_team}</h2>
+						</header>
+						<div class="post-content">
+							{if team_photo}
+							<img src="{team_photo}" alt="{team_name}" class="img-thumbnail">
+							<div class="spacer-30"></div>
+							{if:else}
+							<img src="/assets/images/silhouette_of_driver.jpg" alt="{team_name}" class="img-thumbnail">
+							<div class="spacer-30"></div>
+							{/if}
+							
+							{if team_bio}
+								{team_bio}
+							{if:else}
+								{sr_team_bio_{publisher:current_language_code}}
+							{/if}
+						</div>
+						<div class="spacer-30"></div>
+						<header class="single-post-header clearfix">
+							<h3 class="post-title">{phrase:behind_the_wheel}</h3>
+						</header>
+						<div class="post-content">
+							<div class="col-md-6 col-sm-6">
+								<div class="grid-item staff-item">
+									<div class="grid-item-inner">
+										<div class="media-box"> {if driver_image}{exp:ce_img:single src="{driver_image}" allow_scale_larger="yes" width="600" height="500" crop="yes" attributes='class="img-thumbnail"'}{if:else}<img src="/assets/images/profile-default.png" class="img-thumbnail" />{/if} </div>
+										<div class="grid-content">
+											<h3>{driver_first_name} {driver_last_name}<br /><small>{phrase:driver}</small></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="grid-item staff-item">
+									<div class="grid-item-inner">
+										<div class="media-box"> {if navigator_image}{exp:ce_img:single src="{navigator_image}" allow_scale_larger="yes" width="600" height="500" crop="yes" attributes='class="img-thumbnail"'}{if:else}<img src="/assets/images/profile-default.png" class="img-thumbnail" />{/if} </div>
+										<div class="grid-content">
+											<h3>{navigator_first_name} {navigator_last_name}<br /><small>{phrase:navigator}</small></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Start Sidebar -->
+					<div class="col-md-4 sidebar">
+						<div class="widget-upcoming-events widget">
+							<div class="sidebar-widget-title">
+								<h3>{phrase:the_car}</h3>
+							</div>
+							<div>{if car_image}<img src="{car_image}" />{if:else}<img src="/assets/images/default-car.png" />{/if}</div>
+						</div>
+						
+						
+						<div class="widget-upcoming-events widget">
+							<div class="sidebar-widget-title">
+								<h3>{phrase:sponsor_our_team}</h3>
+							</div>
+							{exp:store:product dynamic="no" entry_id="{entry_id}" return="donate/checkout"}
+							
+								{exp:store:cart}
+
+								    {if no_items}
+								         <div class="row">
+												<div class="col-xs-12 col-sm-12">
+													<label>{phrase:enter_donation_amount}</label>
+													<input type="text" class="form-control" name="price" id="price" placeholder="{phrase:donate_anything_field}"/>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-12 col-sm-12">
+													<input type="hidden" name="item_qty" value="1" />
+													<input type="submit" name="submit" id="submit" class="btn btn-danger btn-lg btn-block" value="{phrase:nav_donate_now}" />
+												</div>
+											</div>
+								    {/if}
+								
+									<div class="alert alert-danger">
+										<div>{phrase:donation_warning}</div>
+										<div class="spacer-10"></div>
+										{exp:store:checkout}
+											<div style="float:left; padding-right:4px"><a href="{path='donate/checkout'}" class="btn btn-default">{phrase:complete_donation}</a></div>
+											<div style="float:left; padding-top:2px"><input type="submit" name="empty_cart" value="{phrase:reset_amount}" class="btn btn-danger" /></div>
+
+											<div class="clear"></div>
+										{exp:store:checkout}
+									</div>
+								
+							   
+
+								{/exp:store:cart}
+							
+							{/exp:store:product}
+							
+						</div>
+						
+						<div class="widget-gallery widget">
+							<div class="sidebar-widget-title">
+								<h3>{phrase:our_donations}</h3>
+							</div>
+							<div style="float:left; text-align:center">{if corporate_team == 'y'}{phrase:corporate_sponsored_team}{if:else}{phrase:total_raised}<br /><span style="color:#D9534F;font-weight:700">{exp:donation_goal:total_collected entry_id="{entry_id}" language_code="{publisher:current_language_code}"}</span>{/if}</div>
+							<div style="float:right; text-align:center">{phrase:team_goal}<br /><span style="color:#D9534F;font-weight:700">{exp:donation_goal:goal entry_id="{entry_id}" field_id="68" language_code="{publisher:current_language_code}"}</span></div>
+							<div style="clear:both;"></div>
+							<div style="float:none;text-align:center">
+								{if corporate_team == 'y'}
+								<input 
+									value="100"
+									data-fgcolor="#D9534F"
+									data-anglearc="250"
+									data-angleoffset="-125"
+									data-readOnly=true
+									data-skin="tron"
+									data-thickness=".2"
+									class="knob"
+								>
+								{if:else}
+								<input 
+									value="{exp:donation_goal:percentage entry_id='{entry_id}' field_id='68'}"
+									data-fgcolor="#D9534F"
+									data-anglearc="250"
+									data-angleoffset="-125"
+									data-readOnly=true
+									data-skin="tron"
+									data-thickness=".2"
+									class="knob"
+								>
+								{/if}
+								
+							</div>
+							
+						</div>
+						<div class="widget-upcoming-events widget hidden-xs hidden-sm" style="margin-top:-40px;">
+							<ul>
+								{exp:donators entry_id="{entry_id}" language_code="{publisher:current_language_code}"}
+								<li class="item event-item clearfix">
+									<div class="event-detail">
+										<h4>{name} {if display_name != name}<br />({display_name}){/if}</h4>
+										<span class="event-dayntime meta-data" style="margin-bottom:0">{amount}</span>
+										<span class="event-dayntime meta-data" style="margin-bottom:0">{order_date format="%M %d, %Y"}</span>
+									</div>
+								</li>
+								{/exp:donators}
+							</ul>
+						</div>
+						
+						<div class="widget-upcoming-events widget hidden-md hidden-lg">
+							<ul>
+								{exp:donators entry_id="{entry_id}" language_code="{publisher:current_language_code}"}
+								
+								<li class="item event-item clearfix">
+									<div class="event-detail">
+										<h4>{name}</h4>
+										<span class="event-dayntime meta-data" style="margin-bottom:0">{amount}</span>
+									</div>
+								</li>
+								
+								{/exp:donators}
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+{/exp:zoo_visitor:details}
+
+	{embed="includes/document-footer" sponsors="off"}
+	
+</div>
+
+{embed="includes/document-modals"}
+
+
+{embed="includes/document-footer-jquery"}
+<script src="/assets/js/jquery.knob.js" type="text/javascript" charset="utf-8"></script>
+<script>
+$(document).ready(function() {
+	
+	$('#submit').attr('disabled','disabled');
+	$('#submit').removeClass("btn-danger");
+	
+	$("#price").change(function() {
+		if (isNaN( $(this).val() )) {
+			$('#submit').removeClass("btn-danger");
+			$('#submit').attr('disabled','disabled');
+		} else {
+			if ( $(this).val() > 0) {
+		    	$('#submit').removeAttr('disabled');
+				$('#submit').addClass("btn-danger");
+			} else {
+				$('#submit').removeClass("btn-danger");
+				$('#submit').attr('disabled','disabled');
+			}
+		}
+	});
+	
+	$( '.slideshow' ).cycle();
+	$(".knob").knob();
+	
+	window.onpageshow = function(event) {
+		if (event.persisted) {
+			window.location.reload();
+		}
+	};
+	
+});	
+</script>
+</body>
+</html>
